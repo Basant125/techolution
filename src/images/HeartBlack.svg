@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57.783" height="50.191" viewBox="0 0 57.783 50.191">
+  <g id="Heart" transform="translate(-131.65 -186)">
+    <g id="Heart-2" data-name="Heart" transform="translate(77.116 -194.046)">
+      <path id="Outline" d="M53.843,54.773,30.406,78.118,7.021,54.734a13.577,13.577,0,1,1,19.2-19.2L29.186,38.5a1.765,1.765,0,0,0,2.505,0l2.938-2.938A13.586,13.586,0,0,1,53.843,54.773Z" transform="translate(53 350)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Fill" d="M3.5,31.758l-.214.213-.213-.213a.124.124,0,1,1,.175-.175l.027.027a.016.016,0,0,0,.023,0l.027-.027a.124.124,0,0,1,.175.175Z" transform="translate(80.141 373.074)" fill="#080808" opacity="0"/>
+    </g>
+  </g>
+</svg>

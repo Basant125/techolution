@@ -1,0 +1,15 @@
+{ 
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/api/index.js"
+        },
+        {
+            "src": "/submit",
+            "methods": [
+                "POST"
+            ],
+            "dest": "/api/index.js"
+        }
+    ]
+}

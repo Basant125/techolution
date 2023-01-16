@@ -1,0 +1,54 @@
+{
+  "name": "techo-website",
+  "private": true,
+  "description": "Techolution website",
+  "version": "1.0.0",
+  "author": "techolution",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fullpage/react-fullpage": "^0.1.28",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.4",
+    "@portabletext/react": "^2.0.0",
+    "aos": "^2.3.4",
+    "gatsby": "4.21.1",
+    "gatsby-plugin-google-gtag": "^5.1.0",
+    "gatsby-plugin-image": "^2.21.0",
+    "gatsby-plugin-manifest": "^4.21.0",
+    "gatsby-plugin-sharp": "^4.21.0",
+    "gatsby-source-filesystem": "^4.21.1",
+    "gatsby-source-sanity": "7.4.2",
+    "gatsby-transformer-sharp": "^4.21.0",
+    "get-youtube-id": "^1.0.1",
+    "gsap": "^3.11.3",
+    "lottie-web": "^5.10.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-burger-menu": "^3.0.8",
+    "react-dom": "^18.1.0",
+    "react-hook-form": "^7.36.0",
+    "react-select": "^5.6.1",
+    "react-youtube": "^10.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "engines": {
+    "npm": ">=8.0.0 <9.0.0",
+    "node": "16.18.1"
+  }
+}

@@ -1,0 +1,87 @@
+.multi_select_input  .multi_select__control{
+    border-color: #4e4e4e;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #4e4e4e;
+    position: relative;
+    border-radius: 0;
+}
+.multi_select_input .css-b62m3t-container {
+    z-index:4;
+}
+
+
+.multi_select_input .multi_select__value-container .multi_select__multi-value,
+.multi_select_input .multi_select__indicators .multi_select__indicator-separator{
+    display: none;
+}
+/* .multi_select_input .css-1hb7zxy-IndicatorsContainer .css-tlfecz-indicatorContainer:first-child, */
+.multi_select_input .multi_select__indicators .multi_select__indicator:first-child 
+    {
+    display: none !important;
+}
+.selected_items_count{
+margin-top: -32px;
+position: relative;
+width: 160px;
+padding: 2px 10px;
+font-size: 1.6rem;
+color: #4E4E4E;
+font-family: 'Roboto';
+z-index: 1;
+}
+.multi_select_input .multi_select__indicators .multi_select__indicator.multi_select__dropdown-indicator svg{
+    fill: #4E4E4E;
+}
+/* .multi_select_input .css-b62m3t-container .css-1pahdxg-control:hover, */
+.multi_select_input .css-b62m3t-container .multi_select__control {
+    border-color: #4e4e4e;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #4e4e4e;
+    border-radius: 0;
+    background: none;
+    background-color: none;
+}
+/* .multi_select_input .css-b62m3t-container .css-1s2u09g-control .css-14el2xx-placeholder, */
+.multi_select_input .css-b62m3t-container .multi_select__control .multi_select__placeholder{
+    font-size: 1.6rem;
+color: #4E4E4E;
+font-family: 'Roboto';
+}
+.multi_select_input .multi_select__option:active
+/* .multi_select_input .css-26l3qy-menu */
+    {
+    background-color: none;
+    background: none;
+}
+/* .multi_select_input .css-26l3qy-menu .css-4ljt47-MenuList .css-9gakcf-option,
+.multi_select_input .css-26l3qy-menu .css-4ljt47-MenuList .css-yt9ioa-option,
+.multi_select_input .css-26l3qy-menu .css-4ljt47-MenuList .css-1n7v3ny-option,
+.multi_select_input .css-26l3qy-menu .css-11uz7rh-MenuList .css-9gakcf-option,
+.multi_select_input .css-26l3qy-menu .css-62qq8v-MenuList .css-9gakcf-option, */
+.multi_select_input .multi_select__menu .multi_select__menu-list .multi_select__option{
+    background: none;
+    color: #000000;
+    font-size: 1.6rem;
+    font-family: 'Roboto';
+}
+/* .multi_select_input .css-26l3qy-menu .css-4ljt47-MenuList .css-9gakcf-option input,
+.multi_select_input .css-26l3qy-menu .css-62qq8v-MenuList .css-9gakcf-option input,
+.multi_select_input .css-26l3qy-menu .css-62qq8v-MenuList .css-yt9ioa-option input, */
+.multi_select_input .multi_select__menu .multi_select__menu-list .multi_select__option input{
+    accent-color: #000000;
+}
+.multi_select_input .multi_select__menu{
+    margin-top: 4px;
+}
+.multi_select_input .multi_select__menu .multi_select__menu-list{
+    background: rgba(239, 239, 239, 0.6);
+    overflow-y: scroll;
+    max-height: 250px;
+}
+.multi_select_input .multi_select__menu{
+    border: none;
+    border-radius: unset;
+    box-shadow: none;
+}

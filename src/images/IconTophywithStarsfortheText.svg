@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.839" height="16.209" viewBox="0 0 16.839 16.209">
+  <g id="Tophy_with_Stars" data-name="Tophy with Stars" transform="translate(-1449.008 -3563.034)">
+    <g id="Techo_Trophy" data-name="Techo Trophy" transform="translate(1449.008 3563.184)">
+      <rect id="Base" width="16.839" height="0.181" transform="translate(0 15.819)" fill="#8b8b8b"/>
+      <path id="Think_Base" data-name="Think Base" d="M108.884,65.823h1.72a1.12,1.12,0,0,1,.957,1.227v1.618h-8.3V67.05a1.12,1.12,0,0,1,.957-1.227h4.668Z" transform="translate(-99.086 -52.759)" fill="none" stroke="#8b8b8b" stroke-width="0.3"/>
+      <path id="thin_Base" data-name="thin Base" d="M107.057,65.823h1.162a.648.648,0,0,1,.646.646v.852h-5.607v-.852a.648.648,0,0,1,.646-.646h3.152Z" transform="translate(-97.652 -54.183)" fill="none" stroke="#8b8b8b" stroke-width="0.3"/>
+      <path id="Holder" d="M115.213,54.638V56.63c-.01,0-1.982,0-1.991,0V54.638A9.338,9.338,0,0,0,115.213,54.638Z" transform="translate(-105.873 -44.949)" fill="none" stroke="#8b8b8b" stroke-width="0.3"/>
+      <path id="Cup_" data-name="Cup " d="M74.813,4V1.513h3.156V0h9.225V1.513h3.156V4a3.2,3.2,0,0,1-3.156,3.237h-.411a4.7,4.7,0,0,1-2.667,2.515,4.3,4.3,0,0,1-.566.164,5.821,5.821,0,0,1-1.947,0,4.65,4.65,0,0,1-3.227-2.679h-.411A3.2,3.2,0,0,1,74.813,4ZM87.184,5.6h.009A1.58,1.58,0,0,0,88.75,4V3.152H87.193V5.288C87.193,5.391,87.189,5.494,87.184,5.6ZM76.407,4a1.58,1.58,0,0,0,1.557,1.6h.009c0-.1-.009-.206-.009-.309V3.152H76.407Z" transform="translate(-74.269 0)" fill="#fff" stroke="#8b8b8b" stroke-width="0.3"/>
+      <path id="Gwowth" d="M16.6,11l-.081,2-.56-.326-.615,1.059H13.731l-1.079,1.86-.518-.3,1.242-2.159h1.611l.437-.76-.573-.339Z" transform="translate(-6.039 -8.659)" fill="#fff" stroke="#8b8b8b" stroke-width="0.3" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

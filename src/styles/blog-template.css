@@ -1,0 +1,42 @@
+.blogTemplate p{
+    max-width: unset !important;
+    font-size: 18px;
+}
+
+.blogTemplate{
+  line-height: 32px;
+}
+ 
+.blogTemplate h3{
+    font-size: 22px;
+} 
+
+.blogTemplate .portable-content a{ 
+  color: #68b04d;;
+} 
+
+.blogTemplate .portable-content a:hover{
+  text-decoration: underline;
+}
+
+.blogTemplate .techo-logo-black-green{
+  display: none;
+}
+
+
+.blogTemplate .header-wrapper .bm-burger-button .bm-burger-bars{
+  background:white !important;
+}
+
+.blogTemplate .blogTemplateHeader{
+  background: linear-gradient(180deg, rgba(37,48,173,1) 0%, rgba(61,136,160,1) 100%);
+  height: 35rem;
+}
+
+.blogTemplate ul li{
+  font-size: 18px;
+}
+.bogBy-date{
+  text-align: center;
+  color: white;
+}

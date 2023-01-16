@@ -1,0 +1,222 @@
+.footerComponent{
+  padding: 2rem;
+  min-height: 450px;
+}
+.footerContainer {
+  display: flex;
+  height: calc(100% - 30px);
+  /* align-items: center; */
+}
+.footerContainer > div {
+  flex: 1;
+  justify-content: space-around;
+}
+.footerColumns {
+  display: flex;
+  cursor: default;
+}
+.footerColumn{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-width: 100px;
+}
+.columnTitle {
+  font-weight: bold;
+  margin-bottom: 15px;
+  /* margin-bottom: 35px; */
+}
+.columnTitle,
+.item {
+  font-size: 14px;
+}
+.item {
+  display: block;
+  max-width: 270px;
+  /* margin-bottom: 25px; */
+  white-space: pre-wrap;
+  /* font-weight: bold;
+  font-family: 'Roboto'; */
+  font-weight: 500;
+}
+.item span {
+  display: inline-block;
+}
+.item span::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #000000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0%;
+}
+.item span:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+.item span:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+.item span.disableTransition:hover:after {
+  transform: scaleX(0);
+}
+.imageContainer {
+  margin: auto;
+  text-align: center;
+}
+.imageContainer > img {
+  width: 75%;
+}
+.socialMediaContainer {
+  display: flex;
+  gap: 30px;
+  height: 20px;
+}
+.socialMediaContainer > a {
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-out 1s;
+  transition: 0s background-image;
+  cursor: pointer;
+}
+.socialMediaContainer > a:hover {
+  transition-delay: 0.3s;
+}
+.linkedIN {
+  background-size: contain;
+  background-image: url(../../images/LinkedInAllBlack.svg);
+  width: 25px;
+  height: 24px;
+  /* width: 16.5px;
+  height: 16.5px; */
+}
+.linkedIN:hover {
+  background-image: url(../../images/LinkedInColor.svg);
+}
+.youtube {
+  background-size: contain;
+  background-image: url(../../images/YoutubeAllBlack.svg);
+  width: 36px;
+  height: 24px;
+  /* width: 24.5px;
+  height: 16.5px; */
+}
+.youtube:hover {
+  background-image: url(../../images/YoutubeColor.svg);
+}
+.twitter {
+  background-size: contain;
+  background-image: url(../../images/TwitterAllBlack.svg);
+  width: 25px;
+  height: 24px;
+  /* width: 16.5px;
+  height: 16.5px; */
+}
+.twitter:hover {
+  background-image: url(../../images/TwitterColor.svg);
+}
+.instagram {
+  background-size: contain;
+  background-image: url(../../images/InstagramAllblack.svg);
+  width: 25px;
+  height: 24px;
+  /* width: 16.5px;
+  height: 16.5px; */
+}
+.instagram:hover {
+  background-image: url(../../images/InstagramColor.svg);
+}
+.thirdContainer{
+  max-height: 267px;
+}
+/* -------------------- responsive ------------------ */
+
+@media screen and (min-width: 1024px) {
+  .columnTitle,
+  .item {
+    font-size: 16px;
+  }
+  .footerContainer{
+    margin-top: 4vh;
+  }
+}
+
+@media screen and (min-width: 1290px) {
+  .columnTitle,
+  .item {
+    font-size: 17px;
+    letter-spacing: 0.8px;
+  }
+}
+
+/* -------------- removing anchor default styling --------------- */
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------------------------------------------------------------- */
+
+@media screen and (min-width:700px) and (max-width: 800px) {
+  .footerContainer{
+    align-items: unset;
+    height: unset;
+  }
+  .footerColumn{
+    max-width: 150px;
+  }
+  .imageContainer{
+    max-width: 195px;
+  }
+  .footerComponent{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width:800px) and (max-width: 1100px) {
+  .footerContainer{
+    align-items: unset;
+    height: unset;
+  }
+  .footerColumn{
+    max-width: 167px;
+  }
+  .footerComponent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .thirdContainer{
+    max-height: 267px;
+  }
+}
+@media screen and (min-width:1025px){
+  .socialMediaContainer{
+    height: 27px;
+  }
+}
+
+@media screen and (min-width:1100px) and (max-width:1300px){
+  .thirdContainer{
+    max-height: 287px;
+  }
+}
+
+@media screen and (min-width:1300px){
+  .thirdContainer{
+    max-height: 300px;
+  }
+  .socialMediaContainer{
+    height: 34px;
+  }
+}

@@ -1,0 +1,160 @@
+.our-amazing-team-wrapper {
+  margin-top: 6vh;
+  /* max-width: 70vw; */
+  /* background-color: yellow; */
+  position: relative;
+}
+
+.our-amazing-team-container .userProfilePic {
+  width: 10vw;
+  height: 10vw;
+  max-width: 10rem;
+  max-height: 10rem;
+  border-radius: 50%;
+  /* cursor: pointer; */
+  margin-bottom: 0.75rem;
+}
+
+.team-user-faded {
+  opacity: 0.3 !important;
+}
+
+.our-amazing-team-container {
+  box-shadow: 0px 30px 20px #656fec19;
+  border-radius: 35px;
+  position: relative;
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  ); */
+  grid-gap: 1vw;
+  align-items: start;
+  padding: 2rem;
+  width: 70vw;
+  height: 65vh;
+}
+
+.our-teams-page__showCasing{
+  text-align: center;
+  font-size: 22px;
+  font-family: cursive;
+  margin-top: 8px;
+  color: #787878;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: highlightTitle 1.5s;
+  animation-iteration-count : 3;
+  top: -40px;
+}
+
+@keyframes highlightTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.testimonials-amazing-team {
+  --our-team-user-top: -150%;
+  --our-team-user-left: -150%;
+  --our-team-user-opactiy: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  max-width: 90%;
+  position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
+  /* opacity: 0.2; */
+  /* position: relative; */
+  /* flex: 0 1 calc(20% - 8px); */
+  /* margin: 1rem 0; */
+  /* margin-bottom: 3vh; */
+}
+.testimonials-amazing-team:before {
+  content: "";
+  position: absolute;
+  height: 150%;
+  width: 150%;
+  top: var(--our-team-user-top);
+  left: var(--our-team-user-left);
+  opacity: var(--our-team-user-opacity);
+  transition: all 2.3s;
+  background: white;
+  transform: rotate(45deg);
+}
+
+.section-dynamicTemplate-3 .testimonials-amazing-team:not(.team-user-faded) {
+  cursor: pointer;
+}
+.loaded_team_with_videos .testimonials-amazing-team:before{
+  width: 0;
+}
+/* .testimonials-amazing-team:hover:before {
+  top: -25%;
+  left: -25%;
+  opacity: 0;
+} */
+.testimonials-am-user-name {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+.testimonials-am-job-profile {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 512px) {
+  .our-amazing-team-container {
+    display: none;
+  }
+  .our-teams-page__showCasing{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .our-amazing-team-container {
+    height: 55vh;
+  }
+  .testimonials-am-user-name {
+    font-size: 12px;
+  }
+  .testimonials-am-job-profile {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 501px) and (max-height:760px){
+  .our-amazing-team-wrapper{
+    margin-top: 4vh;
+  }
+  .our-amazing-team-container{
+    height: 60vh;
+  }
+  .our-amazing-team-container .userProfilePic{
+    width: 4vw;
+    height: 4vw;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 1400px) {
+  
+  .our-amazing-team-container {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  
+  .testimonials-am-job-profile {
+    font-size: 12px;
+  }
+}

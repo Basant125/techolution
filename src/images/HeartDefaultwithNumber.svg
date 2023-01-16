@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53.932" height="59.191" viewBox="0 0 53.932 59.191">
+  <g id="Contact_Us" data-name="Contact Us" transform="translate(1.5)">
+    <g id="Hear_Number" data-name="Hear/Number" transform="translate(-141 -177)">
+      <text id="floating_nmber" data-name="floating nmber" transform="translate(183.432 194)" fill="#fff" font-size="16" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">0</tspan></text>
+      <g id="Heart" transform="translate(84.966 -183.547)">
+        <path id="Outline" d="M42.389,49.537,24.235,67.619,6.122,49.506A10.516,10.516,0,1,1,20.995,34.634l2.3,2.3a1.367,1.367,0,0,0,1.94,0l2.276-2.276A10.523,10.523,0,0,1,42.389,49.537Z" transform="translate(53 350)" fill="none" stroke="#fff" stroke-width="3"/>
+        <path id="Fill" d="M3.5,31.758l-.214.213-.213-.213a.124.124,0,1,1,.175-.175l.027.027a.016.016,0,0,0,.023,0l.027-.027a.124.124,0,0,1,.175.175Z" transform="translate(73.966 367.824)" fill="#fff" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

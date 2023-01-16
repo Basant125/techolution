@@ -1,0 +1,9 @@
+<svg id="Hamburger_Menu" data-name="Hamburger Menu" xmlns="http://www.w3.org/2000/svg" width="45" height="33" viewBox="0 0 45 33">
+  <g id="Hamburgwe_Icon" data-name="Hamburgwe Icon" transform="translate(-1076 -162)">
+    <g id="Lines">
+      <rect id="Upper_Line" data-name="Upper Line" width="45" height="4" rx="2" transform="translate(1076 162)" fill="#FFFFFF"/>
+      <rect id="Bottom_Line" data-name="Bottom Line" width="45" height="4" rx="2" transform="translate(1076 191)" fill="#FFFFFF"/>
+      <rect id="Center_Line" data-name="Center Line" width="29" height="4" rx="2" transform="translate(1092 177)" fill="#FFFFFF"/>
+    </g>
+  </g>
+</svg>

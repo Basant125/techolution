@@ -1,0 +1,21 @@
+.firstpage_textarea{
+    border-radius: 14px;
+}
+.contactTextBox-container{
+    margin-top:25px;
+}
+/* .firstpage_textarea-container{
+    margin-top:45px;
+}
+
+@media screen and (max-height: 800px){
+    .firstpage_textarea-container{
+        margin-top:35px;
+    }
+}
+
+@media screen and (max-height: 700px){
+    .firstpage_textarea-container{
+        margin-top:20px;
+    }
+} */

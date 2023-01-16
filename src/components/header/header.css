@@ -1,0 +1,611 @@
+.header-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--space-4);
+}
+
+.header-logo {
+  cursor: pointer;
+  z-index: 1;
+}
+
+.play-icon-btn,
+.play_icon_cocreate,
+.play_icon_purple {
+  position: absolute;
+  right: 42px;
+  top: 12rem;
+  width: 4rem;
+  cursor: pointer;
+  z-index: 99;
+  transition: transform 0.5s;
+}
+
+.play-icon-btn {
+  display: none;
+}
+
+.play-icon-btn:hover,
+.play_icon_cocreate:hover,
+.play_icon_purple:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+  filter: brightness(0.5);
+}
+
+.heart-icon-btn {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-image: url(../../images/WhiteHeartDefault.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 42px;
+  top: 12rem;
+  width: 4rem;
+  cursor: pointer;
+  transition: right 1s, top 1s, scale 0.5s !important;
+  z-index: 1;
+}
+
+.fp-viewing-0 .indexPage .heart-icon-btn:not(.sideBarOpen) {
+  display: none;
+}
+
+.heart-icon-btn.sideBarOpen {
+  top: 5rem;
+  background-image: url(../../images/HeartBlack.svg);
+  z-index: 1101;
+  cursor: default;
+  width: 3rem;
+}
+
+.heart-icon-btn:not(.sideBarOpen):hover {
+  transform: scale(1.2);
+  transition: right 1s, top 1s, scale 0.5s !important;
+  /* background-image: url(../../images/HeartBlack.svg); */
+}
+
+.blackHeart {
+  background-image: url(../../images/HeartBlack.svg);
+}
+
+.whiteHeart {
+  background-image: url(../../images/WhiteHeartDefault.svg);
+}
+
+/* .techo-logo-black {
+    z-index: 99;
+    display: none;
+    height: 50px;
+  } */
+/* .techo-logo-white {
+  z-index: 99;
+  display: block;
+  height: 45px;
+}
+.techo-only-logo-white {
+  display: none;
+  z-index: 99;
+  height: 29px;
+  width: 43px;
+}
+
+ .cocreatePage .techo-logo-black,
+  .ourPurposePage .techo-logo-black
+  .indexPage .techo-logo-black {
+    display: none;
+  }
+  .indexPage .techo-logo-black {
+    display: none;
+  } */
+/* .indexPage .techo-logo-black-green {
+  display: none;
+} */
+
+/* .cocreatePage .techo-logo-black-green,
+.ourExpertisePage .techo-logo-black-green, .dynamicTemplate .techo-logo-black-green
+{
+  display: none;
+} */
+
+/* .fp-viewing-0 .cocreatePage .techo-logo-black-green,
+.ourPurposePage .techo-logo-black-green,
+.fp-viewing-2 .cocreatePage .techo-logo-black-green,
+.fp-viewing-3 .cocreatePage .techo-logo-black-green,
+.fp-viewing-5 .cocreatePage .techo-logo-black-green,
+.fp-viewing-7 .cocreatePage .techo-logo-black-green,
+.fp-viewing-0 .ourExpertisePage .techo-logo-black-green,
+.fp-viewing-2 .ourExpertisePage .techo-logo-black-green,
+.fp-viewing-3 .ourExpertisePage .techo-logo-black-green,
+.fp-viewing-5 .ourExpertisePage .techo-logo-black-green,
+.fp-viewing-0 .dynamicTemplate .techo-logo-black-green,
+.fp-viewing-2 .dynamicTemplate .techo-logo-black-green,
+.fp-viewing-4 .dynamicTemplate .realWordAI .techo-logo-black-green,
+.fp-viewing-3 .dynamicTemplate .techo-logo-black-green,
+.fp-viewing-5 .dynamicTemplate .techo-logo-black-green,
+.fp-viewing-4 .dynamicTemplate .realWordAI .techo-logo-black-green,
+.fp-viewing-4 .dynamicTemplate .cloudMigration .techo-logo-black-green,
+.fp-viewing-7 .cocreatePage .techo-logo-black-green
+{
+  display: block;
+} 
+.fp-viewing-3 .dynamicTemplate .cloudMigration .techo-logo-black-green,
+.fp-viewing-3 .dynamicTemplate .realWordAI .techo-logo-black-green
+{
+  display: none;
+}
+.fp-viewing-5 .ourExpertisePage .techo-logo-black-green {
+  z-index: 1;
+}
+ .fp-viewing-0 .cocreatePage .techo-logo-white,
+ .ourPurposePage .techo-logo-white,
+.fp-viewing-2 .cocreatePage .techo-logo-white,
+.fp-viewing-3 .cocreatePage .techo-logo-white,
+.fp-viewing-5 .cocreatePage .techo-logo-white,
+.fp-viewing-7 .cocreatePage .techo-logo-white,
+.ourExpertisePage .techo-logo-white,
+.dynamicTemplate .techo-logo-white
+{
+  display: none;
+} */
+
+.techo-logo {
+  z-index: 99;
+  height: 45px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 1.2s cubic-bezier(0, 0, 1, 0.34)
+}
+
+.techo-logo-mobile {
+  display: none;
+  z-index: 99;
+  height: 29px;
+  width: 43px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+}
+
+.fp-viewing-0 .indexPage .techo-logo {
+  display: none;
+}
+
+.fp-viewing-0 .indexPage .techo-logo-mobile {
+  display: block;
+  background-image: url(../../images/Logo-Black.svg);
+  width: 66px;
+  height: 32px;
+}
+
+.ourPurposePage .techo-logo,
+.fp-viewing-0 .cocreatePage .techo-logo,
+.fp-viewing-2 .cocreatePage .techo-logo,
+.fp-viewing-3 .cocreatePage .techo-logo,
+.fp-viewing-5 .cocreatePage .techo-logo,
+.fp-viewing-7 .cocreatePage .techo-logo,
+.fp-viewing-0 .ourExpertisePage .techo-logo,
+.fp-viewing-2 .ourExpertisePage .techo-logo,
+.fp-viewing-3 .ourExpertisePage .techo-logo,
+.fp-viewing-5 .ourExpertisePage .techo-logo,
+.dynamicTemplate .googleCloud .techo-logo,
+.our-customers-page .techo-logo,
+.success-stories-page .techo-logo,
+.fp-viewing-0 .enterpriseCloudPage .techo-logo,
+.fp-viewing-2 .enterpriseCloudPage .techo-logo,
+.fp-viewing-3 .enterpriseCloudPage .techo-logo,
+.fp-viewing-4 .enterpriseCloudPage .techo-logo,
+.fp-viewing-5 .enterpriseCloudPage .techo-logo,
+.fp-viewing-0 .dynamicTemplate .techo-logo,
+.fp-viewing-1 .dynamicTemplate .ourTeam .techo-logo,
+.fp-viewing-2 .dynamicTemplate .techo-logo,
+.fp-viewing-4 .dynamicTemplate .realWordAI .techo-logo,
+.fp-viewing-3 .dynamicTemplate .techo-logo,
+.fp-viewing-5 .dynamicTemplate .techo-logo,
+.fp-viewing-4 .dynamicTemplate .realWordAI .techo-logo,
+.fp-viewing-4 .dynamicTemplate .cloudMigration .techo-logo,
+.fp-viewing-4 .dynamicTemplate .ourTeam .techo-logo,
+.privacyPolicyPage .techo-logo,
+.cookiePolicyPage .techo-logo,
+.termsOfUsePage .techo-logo {
+  background-image: url(../../images/TecholutionLogo-BlackandGreenHeader.svg);
+  transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+}
+
+.indexPage .techo-logo,
+.fp-viewing-1 .ourPurposePage .techo-logo,
+.fp-viewing-1 .cocreatePage .techo-logo,
+.fp-viewing-4 .cocreatePage .techo-logo,
+.fp-viewing-6 .cocreatePage .techo-logo,
+.fp-viewing-1 .ourExpertisePage .techo-logo,
+.fp-viewing-4 .ourExpertisePage .techo-logo,
+.fp-viewing-2 .our-customers-page .techo-logo,
+.fp-viewing-1 .enterpriseCloudPage .techo-logo,
+.fp-viewing-1 .dynamicTemplate .techo-logo,
+.fp-viewing-3 .dynamicTemplate .cloudMigration .techo-logo,
+.fp-viewing-3 .dynamicTemplate .realWordAI .techo-logo,
+.fp-viewing-4 .dynamicTemplate .techo-logo,
+.techolutionAward .techo-logo {
+  background-image: url(../../images/WhiteTecholution.svg);
+  transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+}
+
+.fp-viewing-0 .indexPage .techo-logo {
+  background-image: url(../../images/TecholutionLogo-BlackandGreenHeader.svg);
+  transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+}
+
+.fp-viewing-1 .dynamicTemplate .googleCloud .techo-logo {
+  background-image: url(../../images/TecholutionLogo-BlackandGreenHeader.svg);
+  transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+}
+
+/*.fp-viewing-1 .ourPurposePage .techo-logo-white,
+.fp-viewing-1 .cocreatePage .techo-logo-white,
+.fp-viewing-1 .ourExpertisePage .techo-logo-white,
+.fp-viewing-4 .ourExpertisePage .techo-logo-white,
+.fp-viewing-1 .dynamicTemplate .techo-logo-white,
+.fp-viewing-3 .dynamicTemplate .cloudMigration .techo-logo-white,
+.fp-viewing-3 .dynamicTemplate .realWordAI .techo-logo-white,
+.fp-viewing-4 .dynamicTemplate .techo-logo-white
+ {
+  display: block;
+} */
+/* .fp-viewing-1 .ourPurposePage .techo-logo-black-green {
+  display: none;
+} */
+
+.fp-viewing-3 .cocreatePage .bracket-image,
+.fp-viewing-3 .cocreatePage .down_arrow .arrow-white,
+.fp-viewing-3 .cocreatePage .chat-icon-white,
+/* .fp-viewing-4 .cocreatePage .bracket-image, */
+.fp-viewing-5 .cocreatePage .bracket-image {
+  display: none !important;
+}
+
+.fp-viewing-3 .cocreatePage .down_arrow .arrow-black,
+.techolutionAward .down_arrow .arrow-black,
+.fp-viewing-3 .cocreatePage .chat_icon_blue {
+  display: block;
+}
+
+.fp-viewing-5 .cocreatePage .down_arrow .arrow-white,
+.techolutionAward .down_arrow .arrow-white,
+.fp-viewing-5 .cocreatePage .chat-icon-white {
+  display: none !important;
+}
+
+.fp-viewing-5 .cocreatePage .down_arrow .arrow-black,
+.fp-viewing-5 .cocreatePage .chat_icon_blue {
+  display: none;
+}
+
+.menu-black {
+  z-index: 99;
+  display: none;
+  height: 26px;
+}
+
+.dynamicTemplate .googleCloud .down_arrow {
+  height: 27px;
+}
+
+.menu-white {
+  z-index: 99;
+  display: block;
+  height: 26px;
+}
+
+/* .techo-only-logo-mobile {
+  display: none;
+  width: 66px;
+  height: 32px;
+}
+.fp-viewing-0 .indexPage .techo-only-logo-mobile {
+  display: block;
+} */
+.play_icon_cocreate,
+.play_icon_purple {
+  display: none;
+}
+
+.fp-viewing-0 .cocreatePage .play_icon_cocreate,
+.fp-viewing-0 .ourExpertisePage .play_icon_purple,
+.fp-viewing-0 .dynamicTemplate .play_icon_purple,
+.fp-viewing-0 .ourPurposePage .play_icon_cocreate {
+  display: block;
+}
+
+.cocreatePage .header-wrapper .blackHeart {
+  background-image: url(../../images/Heart-blue.svg);
+}
+
+.fp-viewing-0 .ourExpertisePage .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-2 .ourExpertisePage .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-3 .ourExpertisePage .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-5 .ourExpertisePage .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-0 .dynamicTemplate .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-1 .dynamicTemplate .ourTeam .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-2 .dynamicTemplate .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-3 .dynamicTemplate .header-wrapper .heart_element:not(.sideBarOpen) {
+  background-image: url(../../images/HeartPurple-our-expertise.svg);
+}
+
+.fp-viewing-3 .dynamicTemplate .cloudMigration .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-3 .dynamicTemplate .realWordAI .header-wrapper .heart_element:not(.sideBarOpen) {
+  background-image: url(../../images/WhiteHeartDefault.svg);
+}
+
+.fp-viewing-0 .cocreatePage .heart-icon-btn:not(.sideBarOpen),
+.fp-viewing-2 .cocreatePage .heart-icon-btn:not(.sideBarOpen),
+.fp-viewing-3 .cocreatePage .heart-icon-btn:not(.sideBarOpen),
+.fp-viewing-5 .cocreatePage .heart-icon-btn:not(.sideBarOpen),
+.fp-viewing-7 .cocreatePage .heart-icon-btn:not(.sideBarOpen) {
+  background-image: url(../../images/Heart-blue.svg);
+}
+
+.fp-viewing-0 .ourPurposePage .heart-icon-btn:not(.sideBarOpen),
+.fp-viewing-2 .ourPurposePage .heart-icon-btn:not(.sideBarOpen),
+.fp-viewing-3 .ourPurposePage .heart-icon-btn:not(.sideBarOpen) {
+  background-image: url(../../images/DarkBlueHeart.svg);
+}
+
+.techolutionAward .heart-icon-btn:not(.sideBarOpen) {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NS4xMjkiIGhlaWdodD0iMzkuNDM0IiB2aWV3Qm94PSIwIDAgNDUuMTI5IDM5LjQzNCI+CiAgPHBhdGggaWQ9Ik91dGxpbmUiIGQ9Ik00Mi4xMDcsNDkuNDA4LDI0LjA4NCw2Ny4zNjEsNi4xLDQ5LjM3OEExMC40NDEsMTAuNDQxLDAsMSwxLDIwLjg2NiwzNC42MTJsMi4yNzksMi4yNzlhMS4zNTgsMS4zNTgsMCwwLDAsMS45MjYsMGwyLjI1OS0yLjI1OUExMC40NDgsMTAuNDQ4LDAsMCwxLDQyLjEwNyw0OS40MDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMS41MzQgLTMwLjA0NikiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI5NDFiMiIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=');
+}
+
+/* 
+.techolutionAward .heart-icon-btn:hover {
+  transition: right 1s, top 1s, scale 0.5s !important;
+} */
+
+@media screen and (max-width: 500px) {
+  .dynamicTemplate .googleCloud .down_arrow {
+    height: 16px;
+  }
+
+  .techo-logo {
+    display: none;
+  }
+
+  .techo-logo-mobile {
+    display: block;
+  }
+
+  .fp-viewing-0 .indexPage .techo-logo-mobile {
+    height: 29px;
+    width: 43px;
+  }
+
+  .ourPurposePage .techo-logo-mobile,
+  .fp-viewing-0 .cocreatePage .techo-logo-mobile,
+  .fp-viewing-2 .cocreatePage .techo-logo-mobile,
+  .fp-viewing-3 .cocreatePage .techo-logo-mobile,
+  .fp-viewing-5 .cocreatePage .techo-logo-mobile,
+  .fp-viewing-7 .cocreatePage .techo-logo-mobile,
+  .fp-viewing-0 .ourExpertisePage .techo-logo-mobile,
+  .fp-viewing-2 .ourExpertisePage .techo-logo-mobile,
+  .fp-viewing-3 .ourExpertisePage .techo-logo-mobile,
+  .fp-viewing-5 .ourExpertisePage .techo-logo-mobile,
+  .dynamicTemplate .googleCloud .techo-logo-mobile,
+  .our-customers-page .techo-logo-mobile,
+  .success-stories-page .techo-logo-mobile,
+  .fp-viewing-0 .enterpriseCloudPage .techo-logo-mobile,
+  .fp-viewing-2 .enterpriseCloudPage .techo-logo-mobile,
+  .fp-viewing-3 .enterpriseCloudPage .techo-logo-mobile,
+  .fp-viewing-4 .enterpriseCloudPage .techo-logo-mobile,
+  .fp-viewing-5 .enterpriseCloudPage .techo-logo-mobile,
+  .fp-viewing-0 .dynamicTemplate .techo-logo-mobile,
+  .fp-viewing-2 .dynamicTemplate .techo-logo-mobile,
+  .fp-viewing-4 .dynamicTemplate .realWordAI .techo-logo-mobile,
+  .fp-viewing-3 .dynamicTemplate .techo-logo-mobile,
+  .fp-viewing-5 .dynamicTemplate .techo-logo-mobile,
+  .fp-viewing-4 .dynamicTemplate .realWordAI .techo-logo-mobile,
+  .fp-viewing-4 .dynamicTemplate .cloudMigration .techo-logo-mobile,
+  .fp-viewing-1 .dynamicTemplate .ourTeam .techo-logo-mobile {
+    background-image: url(../../images/Logo-Black.svg);
+    transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+  }
+
+  .indexPage .techo-logo-mobile,
+  .fp-viewing-1 .ourPurposePage .techo-logo-mobile,
+  .fp-viewing-1 .cocreatePage .techo-logo-mobile,
+  .fp-viewing-4 .cocreatePage .techo-logo-mobile,
+  .fp-viewing-6 .cocreatePage .techo-logo-mobile,
+  .fp-viewing-1 .ourExpertisePage .techo-logo-mobile,
+  .fp-viewing-4 .ourExpertisePage .techo-logo-mobile,
+  .fp-viewing-2 .our-customers-page .techo-logo-mobile,
+  .fp-viewing-1 .enterpriseCloudPage .techo-logo-mobile,
+  .fp-viewing-1 .dynamicTemplate .techo-logo-mobile,
+  .fp-viewing-3 .dynamicTemplate .cloudMigration .techo-logo-mobile,
+  .fp-viewing-3 .dynamicTemplate .realWordAI .techo-logo-mobile,
+  .fp-viewing-4 .dynamicTemplate .techo-logo-mobile {
+    background-image: url(../../images/Logo-White.svg);
+    transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+  }
+
+  .privacyPolicyPage .techo-logo-mobile,
+  .termsOfUsePage .techo-logo-mobile,
+  .cookiePolicyPage .techo-logo-mobile,
+  .fp-viewing-0 .indexPage .techo-logo-mobile,
+  .fp-viewing-1 .dynamicTemplate .googleCloud .techo-logo-mobile {
+    background-image: url(../../images/Logo-Black.svg);
+    transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+  }
+
+
+
+  /* .techo-logo-white {
+    display: none;
+  }
+  .techo-only-logo-white {
+    display: block;
+  }
+   .fp-viewing-0 .header-wrapper .techo-only-logo-white {
+    display: none;
+  }
+  .fp-viewing-0 .cocreatePage .techo-logo-black,
+  .fp-viewing-2 .cocreatePage .techo-logo-black,
+  .fp-viewing-0 .cocreatePage .techo-only-logo-white,
+  .fp-viewing-2 .cocreatePage .techo-only-logo-white,
+  .fp-viewing-1 .dynamicTemplate .googleCloud .techo-only-logo-white
+  {
+    display: none;
+  }
+  .fp-viewing-0 .cocreatePage .techo-only-logo-mobile,
+  .fp-viewing-2 .cocreatePage .techo-only-logo-mobile,
+  .fp-viewing-3 .cocreatePage .techo-only-logo-mobile,
+  .fp-viewing-0 .ourExpertisePage .techo-only-logo-mobile,
+  .fp-viewing-2 .ourExpertisePage .techo-only-logo-mobile,
+  .fp-viewing-3 .ourExpertisePage .techo-only-logo-mobile,
+  .fp-viewing-5 .ourExpertisePage .techo-only-logo-mobile,
+  .fp-viewing-1 .ourExpertisePage .techo-only-logo-white,
+  .fp-viewing-4 .ourExpertisePage .techo-only-logo-white,
+  .fp-viewing-0 .dynamicTemplate .techo-only-logo-mobile,
+  .fp-viewing-2 .dynamicTemplate .techo-only-logo-mobile,
+  .fp-viewing-4 .dynamicTemplate .realWordAI .techo-only-logo-mobile,
+  .fp-viewing-3 .dynamicTemplate .techo-only-logo-mobile,
+  .fp-viewing-5 .dynamicTemplate .techo-only-logo-mobile,
+  .fp-viewing-1 .dynamicTemplate .techo-only-logo-white,
+  .fp-viewing-4 .dynamicTemplate .techo-only-logo-white,
+  .fp-viewing-5 .cocreatePage .techo-only-logo-mobile,
+  .our-customers-page .techo-only-logo-mobile,
+  .fp-viewing-1 .dynamicTemplate .googleCloud .techo-only-logo-mobile
+  {
+    display: block;
+  }
+  .fp-viewing-5 .ourExpertisePage .techo-only-logo-mobile{
+    z-index: 1;
+  }
+  .fp-viewing-0 .cocreatePage .techo-logo-black-green,
+  .fp-viewing-2 .cocreatePage .techo-logo-black-green,
+  .fp-viewing-3 .cocreatePage .techo-logo-black-green,
+  .fp-viewing-3 .cocreatePage .techo-only-logo-white,
+  .ourExpertisePage .techo-logo-black-green,
+  .ourExpertisePage .techo-logo-white,
+  .dynamicTemplate .techo-logo-black-green,
+  .dynamicTemplate .techo-logo-white,
+  .our-customers-page .techo-logo-black-green,
+  .our-customers-page .techo-only-logo-white,
+  .fp-viewing-2 .our-customers-page .techo-only-logo-mobile
+   {
+    display: none !important;
+  }
+  .fp-viewing-5 .cocreatePage .techo-logo-black-green,
+  .fp-viewing-5 .cocreatePage .techo-only-logo-white,
+  .fp-viewing-4 .dynamicTemplate .realWordAI .techo-only-logo-white,
+  .fp-viewing-2 .dynamicTemplate .realWordAI .techo-only-logo-white
+   {
+    display: none;
+  }
+  .fp-viewing-1 .cocreatePage .techo-logo-white {
+    display: none;
+  }  */
+  .heart-icon-btn,
+  .play-icon-btn,
+  .play_icon_cocreate,
+  .play_icon_purple {
+    width: 27px;
+    height: 24px;
+    top: 8rem;
+    right: 26px;
+  }
+
+  .play-icon-btn,
+  .play_icon_cocreate {
+    width: 30px;
+    height: 30px;
+    right: 26px;
+  }
+
+  .fp-viewing-0 .cocreatePage .play_icon_grey {
+    display: none;
+  }
+
+  .fp-viewing-0 .cocreatePage .play_icon_cocreate
+
+  /* ,.fp-viewing-2 .our-customers-page .techo-only-logo-white  */
+    {
+    display: block !important;
+  }
+
+
+  /* .techo-logo-white {
+    display: none;
+  }
+  .techo-only-logo-white {
+    display: block;
+  }
+  .fp-viewing-0 .header-wrapper .techo-only-logo-white {
+    display: none;
+  }
+  .fp-viewing-0 .cocreatePage .techo-logo-black,
+  .fp-viewing-2 .cocreatePage .techo-logo-black,
+  .fp-viewing-0 .cocreatePage .techo-only-logo-white,
+  .fp-viewing-2 .cocreatePage .techo-only-logo-white,
+  .fp-viewing-2 .dynamicTemplate .cloudMigration .techo-only-logo-white,
+  .fp-viewing-3 .dynamicTemplate .cloudMigration .techo-only-logo-mobile,
+  .fp-viewing-3 .dynamicTemplate .realWordAI .techo-only-logo-mobile
+  {
+    display: none;
+  }
+  .fp-viewing-0 .cocreatePage .techo-only-logo-mobile,
+  .fp-viewing-2 .cocreatePage .techo-only-logo-mobile {
+    display: block;
+  }
+  .fp-viewing-0 .cocreatePage .techo-logo-black-green,
+  .fp-viewing-2 .cocreatePage .techo-logo-black-green {
+    display: none;
+  }
+  /* .fp-viewing-1 .cocreatePage .techo-logo-white {
+    display: none;
+  } */
+  .play-icon-btn,
+  .play_icon_cocreate {
+    width: 30px;
+    height: 38px;
+    top: 9.7rem;
+    right: 26px;
+  }
+
+  .heart-icon-btn {
+    width: 26px;
+    height: 34px;
+    top: 25px;
+    right: 90px;
+  }
+
+  .heart-icon-btn.sideBarOpen {
+    width: 2.5rem;
+    top: 5.4rem;
+  }
+
+  /* .play-icon-btn,
+  .play_icon_cocreate {
+    width: 30px;
+    height: 38px;
+    right: 26px;
+  } */
+  .fp-viewing-0 .cocreatePage .play_icon_grey {
+    display: none;
+  }
+
+  .fp-viewing-0 .cocreatePage .play_icon_cocreate {
+    display: block;
+  }
+
+  /* .techo-only-logo-mobile {
+    width: 43px;
+    height: 21px;
+  } */
+}

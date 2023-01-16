@@ -1,0 +1,112 @@
+.buttonContainer{
+    display: flex;
+}
+.button{
+    position: relative;
+    border: 1px solid #4E4E4E;
+    background: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    font-weight: 500;
+    transition: all 0.3s 0s ease-in-out;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+.label{
+    transition: all 0.5s;
+}
+.arrow{
+    position: absolute;
+    right: 30%;
+    width: 16.5px;
+    height: 16.5px;
+    background-size: contain;
+    background-image: url(../../images/rightArrowSmall.svg);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.button:hover .arrow{
+    transition: all 0.5s;
+    transform: translateX(20px);
+    opacity: 1;
+}
+.button:hover .label{
+    transition: all 0.5s;
+    transform: translateX(-10px);
+}
+
+.button2 .button{
+   background: transparent linear-gradient(270deg, #656FEC 0%, #8753F2 100%) 0% 0% no-repeat padding-box;
+   color: #ffff;
+   border: none
+}
+.button2 .arrow{
+    right: 15%;
+    background-image: url(../../images/arrow-right-white.svg);
+}
+.button2 .button:hover{
+    transition: all 0.5s;
+    width: 200px;
+}
+.button2 .button:hover .label{
+    transition: all 0.5s;
+    transform: translateX(-15px);
+}
+
+@media screen and (min-width: 1400px) {
+    .button2 .button{
+      width: 200px;
+      height: 40px;
+    }
+    .button2 .button:hover{
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .button2 .button{
+      width: 229px;
+      height: 50px;
+    }
+    .button2 .button:hover{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button2 .button{
+      width: 168px;
+      height: 38px;
+      font-size: var(--font-small);
+    }
+}
+
+@media screen and (max-height: 700px){
+    .buttonContainer{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-height: 650px){
+    .buttonContainer{
+        margin-top: 10px;
+        position: fixed;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-height: 650px) and (max-width: 500px){
+    .button{
+        width: 150px;
+        height: 35px;
+    }
+}

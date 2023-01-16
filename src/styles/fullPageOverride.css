@@ -1,0 +1,164 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html,
+.section,
+.slide,
+.fp-tableCell {
+  min-height: 100%;
+}
+
+main,
+#fullpage {
+  height: 100%;
+}
+/* fix for safari flickering issue */
+#fullpage .section{
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.indexPage #fullpage .section{
+  margin-top: -0.1%;
+}
+/* end of safari flickering issue fix */
+
+#fullpage .section {
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+#fullpage .section.co_create_section.successStories, #fullpage .section.co_create_section.aboutCocreate{
+  align-content: start;
+}
+
+/* .fp-viewing-0 .indexPage .header-wrapper .techo-logo-white {
+  display: none;
+} */
+
+.fp-viewing-0 .header-wrapper .menu-black {
+  display: block;
+}
+
+.fp-viewing-0 .header-wrapper .menu-white {
+  display: none;
+}
+
+.fp-viewing-0 .arrow-black {
+  display: block;
+}
+
+.fp-viewing-0 .arrow-white {
+  display: none;
+}
+
+.fp-viewing-0 .indexPage .chat-icon-default {
+  display: block;
+}
+
+.fp-viewing-0 .chat-icon-white {
+  display: none;
+}
+
+.fp-viewing-0 .indexPage .play-icon-btn {
+  display: block;
+}
+
+
+.fp-viewing-1 .ourTeam .arrow-white {
+  display: none;
+}
+
+.fp-viewing-1 .ourTeam .arrow-black {
+  display: block;
+}
+
+
+.section-content {
+  max-width: 100%;
+}
+
+.fp-watermark {
+  display: none !important;
+}
+.fp-viewing-2 .cocreatePage .arrow-black,
+.fp-viewing-2 .cocreatePage .chat-icon-default,
+.fp-viewing-2 .ourExpertisePage .arrow-black,
+.fp-viewing-3 .ourExpertisePage .arrow-black, 
+.fp-viewing-2 .dynamicTemplate .googleCloud .arrow-black,
+.fp-viewing-3 .dynamicTemplate .googleCloud .arrow-black,
+.fp-viewing-3 .dynamicTemplate .arrow-black,
+.fp-viewing-2 .ourPurposePage .arrow-black,
+.fp-viewing-2 .dynamicTemplate .cloudMigration .arrow-black,
+.fp-viewing-2 .dynamicTemplate .productInnovation .arrow-black,
+.fp-viewing-5 .ourExpertisePage .section-footer-gradient .arrow-black,
+.fp-viewing-5 .dynamicTemplate .section-footer-gradient .arrow-black,
+.fp-viewing-3 .dynamicTemplate .cloudMigration .arrow-white,
+.fp-viewing-3 .dynamicTemplate .realWordAI .arrow-white,
+.fp-viewing-4 .dynamicTemplate .realWordAI .arrow-black,
+.fp-viewing-1 .dynamicTemplate .googleCloud .arrow-black,
+.fp-viewing-2 .dynamicTemplate .ourTeam .arrow-black,
+.fp-viewing-3 .dynamicTemplate .ourTeam .arrow-black,
+.fp-viewing-2 .dynamicTemplate .realWordAI .arrow-black
+ {
+  display: block;
+}
+
+.fp-viewing-2 .cocreatePage .arrow-white,
+.fp-viewing-2 .cocreatePage .chat-icon-white,
+.fp-viewing-2 .ourExpertisePage .arrow-white,
+.fp-viewing-3 .ourExpertisePage .arrow-white,
+.fp-viewing-2 .dynamicTemplate .arrow-white,
+.fp-viewing-2 .dynamicTemplate .ourTeam .arrow-white,
+.fp-viewing-3 .dynamicTemplate .ourTeam .arrow-white,
+.fp-viewing-3 .dynamicTemplate .arrow-white,
+.fp-viewing-2 .ourPurposePage .arrow-white,
+.fp-viewing-2 .ourPurposePage .chat-icon-white,
+.fp-viewing-5 .ourExpertisePage .section-footer-gradient .arrow-white,
+.fp-viewing-5 .dynamicTemplate .section-footer-gradient .arrow-white,
+.fp-viewing-2 .dynamicTemplate .cloudSecurity .arrow-black,
+.fp-viewing-2 .dynamicTemplate .hybridCloud .arrow-black,
+.fp-viewing-2 .dynamicTemplate .edgeComputeIOT .arrow-black,
+.fp-viewing-2 .dynamicTemplate .realTimeDataStreaming .arrow-black,
+.fp-viewing-2 .dynamicTemplate .applicationModernization .arrow-black,
+.fp-viewing-2 .dynamicTemplate .managedServices .arrow-black,
+.fp-viewing-2 .dynamicTemplate .cloudAutomation .arrow-black,
+.fp-viewing-2 .dynamicTemplate .cloudSecurity .chat-icon-white,
+.fp-viewing-2 .dynamicTemplate .hybridCloud .chat-icon-white,
+.fp-viewing-2 .dynamicTemplate .edgeComputeIOT .chat-icon-white,
+.fp-viewing-2 .dynamicTemplate .realTimeDataStreaming .chat-icon-white,
+.fp-viewing-2 .dynamicTemplate .applicationModernization .chat-icon-white,
+.fp-viewing-2 .dynamicTemplate .managedServices .chat-icon-white,
+.fp-viewing-2 .dynamicTemplate .cloudAutomation .chat-icon-white,
+.fp-viewing-4 .dynamicTemplate .cloudMigration .arrow-white,
+.fp-viewing-2 .dynamicTemplate .enterpriseDataManagement .arrow-black,
+.fp-viewing-2 .dynamicTemplate .governance .arrow-black,
+.fp-viewing-4 .dynamicTemplate .cloudMigration .chat-icon-white,
+.fp-viewing-5 .dynamicTemplate .realWordAI .arrow-white,
+.fp-viewing-4 .dynamicTemplate .realWordAI .arrow-white,
+.fp-viewing-3 .dynamicTemplate .realWordAI .arrow-black,
+.fp-viewing-3 .dynamicTemplate .productInnovation .arrow-black,
+.fp-viewing-3 .dynamicTemplate .cloudMigration .arrow-black
+{
+  display: none;
+}
+
+@media screen and (max-width:800px) {
+  .main_home_page_logo{
+    max-width: 59vw;
+    /* margin-top: calc(100% - 52px);
+    margin-bottom: calc(100% - 52px); */
+  }
+  #fullpage .section {
+    height: var(--app-height);
+  }
+  #fullpage .section {
+    height: var(--app-height);
+  }
+}
+
+

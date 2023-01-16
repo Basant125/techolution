@@ -1,0 +1,88 @@
+
+:root {
+    --color-light: white;
+    --color-background: var(--color-light);
+    --size-bezel: .5rem;
+    --size-radius: 4px;
+    line-height: 1.4;
+    /* padding: 0 calc(var(--size-bezel) * 3); getting applied to html tag? */
+}
+.input {
+    position: relative;
+    margin: 6px 0;
+}
+.input__label {
+    color: #4E4E4E; 
+    font-size: 1.3rem;
+   /*  position: absolute;
+    left: 0;
+    top: 0;
+    padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
+    margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    transition: transform 120ms ease-in;
+    line-height: 1.2;
+    padding-left: 5px;
+    font-size: 1.3rem;
+    z-index: -1; // while clicking on label input is not focusing
+     */
+} 
+.input__field {
+    outline: none;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 1px solid #4E4E4E;
+    padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+    color: currentColor;
+    background: transparent;
+    border-radius: var(--size-radius);
+    margin-bottom: 2px;
+    margin-top: 4px;
+    height: 5rem;
+    font-size: 1.6rem;
+}
+.input__textArea{
+    height: unset;
+    font-family: arial;
+}
+/* .input__field:focus + .input__label, .input__field:not(:placeholder-shown) + .input__label {
+    transform: translate(-6px, -115%) scale(0.9);
+    color: #808080;
+} */
+.error{
+    color: rgb(255, 0, 0);
+    font-size: 1.4rem;
+    min-height: 20px;
+}
+
+@media screen and (max-height: 800px){
+    .input__field {
+       height: 4.5rem;
+    }
+    .error{
+        font-size: 1.2rem;
+        min-height: 15px;
+    }
+    .input__field.input__textArea{
+        height: 8rem;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-height: 700px){
+    .input__field {
+       height: 4rem;
+       margin: 2px;
+    }
+    .error{
+        font-size: 1.2rem;
+        min-height: 15px;
+    }
+    .input__field.input__textArea{
+        height: 6rem;
+        border-radius: 8px;
+    }
+}

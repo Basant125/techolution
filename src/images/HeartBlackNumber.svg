@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62.267" height="69.258" viewBox="0 0 62.267 69.258">
+  <g id="Hear_Number" data-name="Hear/Number" transform="translate(-136.5 -170.814)">
+    <text id="floating_nmber" data-name="floating nmber" transform="translate(188.767 187.814)" font-size="16" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">0</tspan></text>
+    <g id="Heart" transform="translate(80.466 -189.733)">
+      <path id="Outline" d="M55.684,55.615,31.4,79.806,7.166,55.574a14.069,14.069,0,1,1,19.9-19.9l3.071,3.071a1.829,1.829,0,0,0,2.6,0L35.774,35.7a14.079,14.079,0,0,1,19.91,19.91Z" transform="translate(53 350)"/>
+      <path id="Fill" d="M3.5,31.758l-.214.213-.213-.213a.124.124,0,1,1,.175-.175l.027.027a.016.016,0,0,0,.023,0l.027-.027a.124.124,0,0,1,.175.175Z" transform="translate(81.134 373.917)" fill="#944edc" opacity="0"/>
+    </g>
+  </g>
+</svg>

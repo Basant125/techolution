@@ -1,0 +1,893 @@
+:root {
+  --border-radius: 4px;
+  --color-text: #333;
+  --color-primary: #7026b9;
+  --color-code-bg: #fff4db;
+  --color-code: #8a6534;
+  --font-sans: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --font-lg: 18px;
+  --font-md: 16px;
+  --font-sm: 14px;
+  --font-sx: 12px;
+  --font-root: 10px;
+  --line-height-loose: 1.75;
+  --line-height-normal: 1.5;
+  --line-height-dense: 1.1;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 42px;
+  --space-5: 3.5rem;
+  --space-6: 64px;
+  --size-content: 54rem;
+  --size-gutter: var(--space-5);
+  --size-gap: var(--space-6);
+  --app-height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font: sans-serif;
+  font-size: var(--font-root);
+  line-height: var(--line-height-normal);
+  overflow-y: scroll;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: var(--color-text);
+  font-family: sans-serif;
+  font-family: var(--font-sans);
+  font-weight: normal;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+a {
+  background-color: transparent;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+  text-decoration: none;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+  line-height: var(--line-height-dense);
+  letter-spacing: -0.01em;
+}
+
+h1>b {
+  color: var(--color-primary);
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-mono);
+  font-size: 1em;
+  line-height: inherit;
+}
+
+hr {
+  box-sizing: content-box;
+  overflow: visible;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: calc(var(--space-4) - 1px);
+  background: hsla(0, 0%, 0%, 0.2);
+  border: none;
+  height: 1px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before {
+  box-sizing: inherit;
+}
+
+*:after {
+  box-sizing: inherit;
+}
+
+hgroup,
+img,
+figure,
+fieldset,
+ul,
+ol,
+dl,
+dd,
+p {
+  margin: 0;
+  padding: 0;
+  /* margin-bottom: var(--space-4); */
+}
+
+ul,
+ol {
+  margin-left: var(--space-4);
+  list-style-position: outside;
+  list-style-image: none;
+}
+
+pre {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  font-size: 0.875rem;
+  line-height: var(--line-height-normal);
+  background: hsla(0, 0%, 0%, 0.04);
+  border-radius: var(--border-radius);
+  overflow: auto;
+  word-wrap: normal;
+  padding: var(--space-4);
+}
+
+b,
+strong,
+dt,
+th {
+  font-weight: bold;
+}
+
+li {
+  margin-bottom: calc(var(--space-4) / 2);
+}
+
+ol li,
+ul li {
+  padding-left: 0;
+}
+
+li>ol,
+li>ul {
+  margin-bottom: calc(var(--space-4) / 2);
+  margin-left: var(--space-4);
+  margin-top: calc(var(--space-4) / 2);
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+li *:last-child {
+  margin-bottom: 0;
+}
+
+p *:last-child {
+  margin-bottom: 0;
+}
+
+li>p {
+  margin-bottom: calc(var(--space-4) / 2);
+}
+
+p {
+  max-width: 680px;
+}
+
+code {
+  font-size: 0.875rem;
+}
+
+kbd {
+  font-size: 0.875rem;
+}
+
+samp {
+  font-size: 0.875rem;
+}
+
+abbr {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+}
+
+acronym {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+}
+
+tt,
+code {
+  background-color: var(--color-code-bg);
+  border-radius: var(--border-radius);
+  color: var(--color-code);
+  font-family: var(--font-mono);
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  word-break: normal;
+}
+
+pre code {
+  background: none;
+}
+
+code:before,
+code:after,
+tt:before,
+tt:after {
+  content: "\00a0";
+  letter-spacing: -0.2em;
+}
+
+pre code:before,
+pre code:after,
+pre tt:before,
+pre tt:after {
+  content: none;
+}
+
+.bracket-image {
+  z-index: 8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85rem;
+  pointer-events: none;
+}
+
+/* @media screen and (min-height: 600px) and (max-height: 670px) {
+  .bracket-image {
+    top: 50%;
+  }
+}
+@media screen and (min-height: 670px) and (max-height: 750px) {
+  .bracket-image {
+    top: 50%;
+  }
+}
+@media screen and (min-height: 750px) and (max-height: 850px) {
+  .bracket-image {
+    top: 50%;
+  }
+}
+@media screen and (min-height: 850px) and (max-height: 950px) {
+  .bracket-image {
+    top: 50%;
+  }
+}
+@media screen and (min-height: 940px) and (max-height: 1020px) {
+  .bracket-image {
+    top: 50%;
+  }
+}
+@media screen and (min-height: 1020px) and (max-height: 1100px) {
+  .bracket-image {
+    top: 50%;
+  }
+} */
+.bracket-image-index-mobile,
+.bracket-image-co-create-mobile,
+.bracket-image-co-create-mobile2,
+.bracket-image-our-purpose,
+.bracket-image-our-purpose-mobile,
+.bracket-image-our-expertise,
+.bracket-image-our-expertise2,
+.bracket-image-our-expertise1-mobile,
+.bracket-image-our-expertise2-mobile,
+.bracket-image-our-customers-mobile {
+  display: none;
+}
+
+.bracket-image-google-bracket-mob {
+  opacity: 0;
+}
+
+@media screen and (min-height: 1100px) {
+  .bracket-image {
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .bracket-image {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+  .bracket-image {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1440px) {
+  .bracket-image {
+    width: 89rem;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1441px) {
+  .bracket-image {
+    width: 53vw;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .bracket-image {
+    width: 58vw;
+  }
+}
+
+/* black up arrow */
+
+.black-up-arrow-container {
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-up-arrow {
+  transform: rotate(180deg) translateY(20px);
+  cursor: pointer;
+}
+
+.black-up-arrow>img {
+  width: 56px;
+  height: 28px;
+}
+
+.bracket-image-google-bracket {
+  z-index: 0;
+  opacity: 0;
+  transition: opacity .8s ease-out;
+}
+
+.fp-viewing-2 .cloudMigration .bracket-image-google-bracket,
+.fp-viewing-2 .enterpriseCloudFoundation .bracket-image-google-bracket {
+  opacity: 1;
+  transition: opacity .8s ease-out;
+}
+
+.fp-viewing-2 .cloudMigration .bracket-image-index,
+.fp-viewing-2 .cloudMigration .bracket-image-our-expertise,
+.fp-viewing-2 .cloudMigration .bracket-image-our-expertise1-mobile,
+.fp-viewing-2 .enterpriseCloudFoundation .bracket-image-index,
+.fp-viewing-2 .enterpriseCloudFoundation .bracket-image-our-expertise,
+.fp-viewing-2 .enterpriseCloudFoundation .bracket-image-our-expertise1-mobile {
+  opacity: 0;
+  transition: opacity .8s ease-out;
+}
+
+.dynamicTemplate .googleCloud .bracket-image-google-bracket,
+.fp-viewing-1 .dynamicTemplate .googleCloud .bracket-image-google-bracket {
+  opacity: 1;
+  z-index: 9;
+}
+
+.dynamicTemplate .googleCloud .bracket-image-index,
+.dynamicTemplate .googleCloud .bracket-image-our-expertise,
+.dynamicTemplate .googleCloud .bracket-image-our-expertise1-mobile,
+.fp-viewing-1 .dynamicTemplate .googleCloud .bracket-image-our-expertise2 {
+  opacity: 0;
+}
+
+.fp-viewing-3 .dynamicTemplate .googleCloud .bracket-image-google-bracket {
+  display: none;
+}
+
+.section-googleCloud-1 {
+  background: white !important;
+}
+
+.dynamicTemplate .googleCloud .fp-overflow .section-content-title,
+.dynamicTemplate .googleCloud .fp-overflow .main_section_content {
+  color: var(--color-text);
+}
+
+/* .fp-viewing-1 .dynamicTemplate .googleCloud  .techo-logo-white{
+  display: none;
+}
+
+.fp-viewing-1 .dynamicTemplate .googleCloud .techo-logo-black-green{
+  display: block;
+} */
+
+.fp-viewing-0 .dynamicTemplate .googleCloud .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-1 .dynamicTemplate .googleCloud .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-2 .dynamicTemplate .googleCloud .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-3 .dynamicTemplate .googleCloud .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-4 .dynamicTemplate .googleCloud .header-wrapper .heart_element:not(.sideBarOpen) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45.433' height='39.692' viewBox='0 0 45.433 39.692'%3E%3Cg id='Heart' transform='translate(-54.534 -380.046)'%3E%3Cpath id='Outline' d='M42.389,49.537,24.235,67.619,6.122,49.506A10.516,10.516,0,1,1,20.995,34.634l2.3,2.3a1.367,1.367,0,0,0,1.94,0l2.276-2.276A10.523,10.523,0,0,1,42.389,49.537Z' transform='translate(53 350)' fill='none' stroke='%23000000' stroke-width='3'/%3E%3Cpath id='Fill' d='M3.5,31.758l-.214.213-.213-.213a.124.124,0,1,1,.175-.175l.027.027a.016.016,0,0,0,.023,0l.027-.027a.124.124,0,0,1,.175.175Z' transform='translate(73.966 367.824)' fill='%23000000' opacity='0'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.fp-viewing-0 .dynamicTemplate .googleCloud nav .breadcrumb__separator,
+.fp-viewing-1 .dynamicTemplate .googleCloud nav .breadcrumb__separator,
+.fp-viewing-2 .dynamicTemplate .googleCloud nav .breadcrumb__separator,
+.fp-viewing-3 .dynamicTemplate .googleCloud nav .breadcrumb__separator {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:svgjs='http://svgjs.com/svgjs' xmlns:xlink='http://www.w3.org/1999/xlink' width='288' height='288'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:svgjs='http://svgjs.com/svgjs' xmlns:xlink='http://www.w3.org/1999/xlink' width='288' height='288' viewBox='0 0 288 288'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='288' height='288' enable-background='new 0 0 49.656 49.656' viewBox='0 0 49.656 49.656'%3E%3Cpolygon fill='%2300000' points='14.535 48.242 11.707 45.414 32.292 24.828 11.707 4.242 14.535 1.414 37.949 24.828' class='color00ad97 svgShape color000'/%3E%3Cpath fill='%2300000' d='M14.535,49.656l-4.242-4.242l20.585-20.586L10.293,4.242L14.535,0l24.829,24.828L14.535,49.656z M13.121,45.414l1.414,1.414l22-22l-22-22l-1.414,1.414l20.585,20.586L13.121,45.414z' class='color00ad97 svgShape color000'/%3E%3C/svg%3E%3C/svg%3E%3C/svg%3E");
+}
+
+.fp-viewing-0 .dynamicTemplate .techolutionAward nav .breadcrumb__separator,
+.fp-viewing-1 .dynamicTemplate .techolutionAward nav .breadcrumb__separator,
+.fp-viewing-2 .dynamicTemplate .techolutionAward nav .breadcrumb__separator,
+.fp-viewing-3 .dynamicTemplate .techolutionAward nav .breadcrumb__separator,
+.fp-viewing-4.dynamicTemplate .techolutionAward nav .breadcrumb__separator {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:svgjs='http://svgjs.com/svgjs' xmlns:xlink='http://www.w3.org/1999/xlink' width='288' height='288'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:svgjs='http://svgjs.com/svgjs' xmlns:xlink='http://www.w3.org/1999/xlink' width='288' height='288' viewBox='0 0 288 288'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='288' height='288' enable-background='new 0 0 49.656 49.656' viewBox='0 0 49.656 49.656'%3E%3Cpolygon fill='%2300000' points='14.535 48.242 11.707 45.414 32.292 24.828 11.707 4.242 14.535 1.414 37.949 24.828' class='color00ad97 svgShape color000'/%3E%3Cpath fill='%2300000' d='M14.535,49.656l-4.242-4.242l20.585-20.586L10.293,4.242L14.535,0l24.829,24.828L14.535,49.656z M13.121,45.414l1.414,1.414l22-22l-22-22l-1.414,1.414l20.585,20.586L13.121,45.414z' class='color00ad97 svgShape color000'/%3E%3C/svg%3E%3C/svg%3E%3C/svg%3E");
+}
+
+#fp-nav {
+  top: unset !important;
+  /* bottom: -6rem; */
+  /* right: 17px; */
+  right: 3rem !important;
+}
+
+.fp-viewing-0 #up-arrow-naviagtion {
+  opacity: 0;
+}
+
+#fp-nav.fp-right-indexPage #up-arrow-naviagtion svg {
+  filter: brightness(0) invert(1);
+}
+
+.fp-viewing-9 .fp-right-indexPage #up-arrow-naviagtion svg {
+  filter: unset !important;
+}
+
+.fp-viewing-0 #fp-nav ul li a span,
+.fp-slidesNav ul li a span,
+.fp-viewing-9 #fp-nav .indexPage li a span,
+.fp-slidesNav .indexPage li a span,
+.fp-viewing-2 #fp-nav .ourPurposePage li a span,
+.fp-slidesNav .ourPurposePage li a span,
+.fp-viewing-3 #fp-nav .ourPurposePage li a span,
+.fp-slidesNav .ourPurposePage li a span,
+.fp-viewing-2 #fp-nav .cocreatePage li a span,
+.fp-slidesNav .cocreatePage li a span,
+.fp-viewing-3 #fp-nav .cocreatePage li a span,
+.fp-slidesNav .cocreatePage li a span,
+.fp-viewing-5 #fp-nav .cocreatePage li a span,
+.fp-slidesNav .cocreatePage li a span,
+.fp-viewing-2 #fp-nav .ourExpertisePage li a span,
+.fp-slidesNav .ourExpertisePage li a span,
+.fp-viewing-3 #fp-nav .ourExpertisePage li a span,
+.fp-slidesNav .ourExpertisePage li a span,
+.fp-viewing-5 #fp-nav .ourExpertisePage li a span,
+.fp-slidesNav .ourExpertisePage li a span,
+.fp-viewing-1 #fp-nav .googleCloud li a span,
+.fp-slidesNav .googleCloud li a span,
+.fp-viewing-2 #fp-nav .googleCloud li a span,
+.fp-slidesNav .googleCloud li a span,
+.fp-viewing-3 #fp-nav .googleCloud li a span,
+.fp-slidesNav .googleCloud li a span,
+.fp-viewing-4 #fp-nav .googleCloud li a span,
+.fp-slidesNav .googleCloud li a span,
+.fp-viewing-3 #fp-nav .our-customers-page li a span,
+.fp-slidesNav .our-customers-page li a span,
+.fp-viewing-4 #fp-nav .our-customers-page li a span,
+.fp-slidesNav .our-customers-page li a span,
+.fp-viewing-5 #fp-nav .our-customers-page li a span,
+.fp-slidesNav .our-customers-page li a span,
+.fp-viewing-6 #fp-nav .our-customers-page li a span,
+.fp-slidesNav .our-customers-page li a span,
+.fp-viewing-7 #fp-nav .our-customers-page li a span,
+.fp-slidesNav .our-customers-page li a span,
+
+.fp-viewing-3 #fp-nav .techolutionAward li a span,
+.fp-slidesNav .techolutionAward li a span,
+.fp-viewing-4 #fp-nav .techolutionAward li a span,
+.fp-slidesNav .techolutionAward li a span,
+.fp-viewing-5 #fp-nav .techolutionAward li a span,
+.fp-slidesNav .techolutionAward li a span,
+.fp-viewing-6 #fp-nav .techolutionAward li a span,
+.fp-slidesNav .techolutionAward li a span,
+.fp-viewing-7 #fp-nav .techolutionAward li a span,
+.fp-slidesNav .techolutionAward li a span,
+
+#fp-nav .success-stories-page li a span,
+.fp-slidesNav .success-stories-page li a span,
+.fp-viewing-8 #fp-nav .techolutionAward li a span,
+.fp-slidesNav .techolutionAward li a span,
+.fp-viewing-8 #fp-nav .our-customers-page li a span,
+.fp-slidesNav .our-customers-page li a span,
+.fp-viewing-1 #fp-nav .ourTeam li a span,
+.fp-slidesNav .ourTeam li a span,
+.fp-viewing-2 #fp-nav .ourTeam li a span,
+.fp-slidesNav .ourTeam li a span,
+.fp-viewing-3 #fp-nav .ourTeam li a span,
+.fp-slidesNav .ourTeam li a span,
+.fp-viewing-4 #fp-nav .ourTeam li a span,
+.fp-slidesNav .ourTeam li a span,
+.fp-viewing-2 #fp-nav .enterpriseCloudPage li a span,
+.fp-slidesNav .enterpriseCloudPage li a span,
+.fp-viewing-3 #fp-nav .enterpriseCloudPage li a span,
+.fp-slidesNav .enterpriseCloudPage li a span,
+.fp-viewing-4 #fp-nav .enterpriseCloudPage li a span,
+.fp-slidesNav .enterpriseCloudPage li a span,
+.fp-viewing-5 #fp-nav .enterpriseCloudPage li a span,
+.fp-slidesNav .enterpriseCloudPage li a span,
+.fp-viewing-2 #fp-nav .productInnovation li a span,
+.fp-slidesNav .productInnovation li a span,
+.fp-viewing-3 #fp-nav .productInnovation li a span,
+.fp-slidesNav .productInnovation li a span,
+.fp-viewing-2 #fp-nav .realWordAI li a span,
+.fp-slidesNav .realWordAI li a span,
+.fp-viewing-4 #fp-nav .realWordAI li a span,
+.fp-slidesNav .realWordAI li a span,
+.fp-viewing-5 #fp-nav .realWordAI li a span,
+.fp-slidesNav .realWordAI li a span,
+.fp-viewing-2 #fp-nav .enterpriseCloudFoundation li a span,
+.fp-slidesNav .enterpriseCloudFoundation li a span,
+.fp-viewing-3 #fp-nav .enterpriseCloudFoundation li a span,
+.fp-slidesNav .enterpriseCloudFoundation li a span,
+.fp-viewing-2 #fp-nav .cloudSecurity li a span,
+.fp-slidesNav .cloudSecurity li a span,
+.fp-viewing-2 #fp-nav .governance li a span,
+.fp-slidesNav .governance li a span,
+.fp-viewing-2 #fp-nav .enterpriseDataManagement li a span,
+.fp-slidesNav .enterpriseDataManagement li a span,
+.fp-viewing-3 #fp-nav .enterpriseDataManagement li a span,
+.fp-slidesNav .enterpriseDataManagement li a span,
+.fp-viewing-2 #fp-nav .edgeComputeIOT li a span,
+.fp-slidesNav .edgeComputeIOT li a span,
+.fp-viewing-2 #fp-nav .cloudMigration li a span,
+.fp-slidesNav .cloudMigration li a span,
+.fp-viewing-4 #fp-nav .cloudMigration li a span,
+.fp-slidesNav .cloudMigration li a span,
+.fp-viewing-2 #fp-nav .cloudAutomation li a span,
+.fp-slidesNav .cloudAutomation li a span,
+.fp-viewing-2 #fp-nav .realTimeDataStreaming li a span,
+.fp-slidesNav .realTimeDataStreaming li a span,
+.fp-viewing-2 #fp-nav .managedServices li a span,
+.fp-slidesNav .managedServices li a span,
+.fp-viewing-2 #fp-nav .hybridCloud li a span,
+.fp-slidesNav .hybridCloud li a span,
+.fp-viewing-2 #fp-nav .applicationModernization li a span,
+.fp-slidesNav .applicationModernization li a span {
+  background: #8b8b8b !important;
+}
+
+.fp-viewing-0 #fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-viewing-9 #fp-nav .indexPage li a.active span,
+.fp-slidesNav .indexPage li a.active span,
+.fp-viewing-2 #fp-nav .ourPurposePage li a.active span,
+.fp-slidesNav .ourPurposePage li a.active span,
+.fp-viewing-3 #fp-nav .ourPurposePage li a.active span,
+.fp-slidesNav .ourPurposePage li a.active span,
+.fp-viewing-2 #fp-nav .techolutionAward li a.active span,
+.fp-slidesNav .techolutionAward li a.active span,
+.fp-viewing-3 #fp-nav .techolutionAward li a.active span,
+.fp-slidesNav .techolutionAward li a.active span,
+.fp-viewing-2 #fp-nav .cocreatePage li a.active span,
+.fp-slidesNav .cocreatePage li a.active span,
+.fp-viewing-3 #fp-nav .cocreatePage li a.active span,
+.fp-slidesNav .cocreatePage li a.active span,
+.fp-viewing-5 #fp-nav .cocreatePage li a.active span,
+.fp-slidesNav .cocreatePage li a.active span,
+.fp-viewing-2 #fp-nav .ourExpertisePage li a.active span,
+.fp-slidesNav .ourExpertisePage li a.active span,
+.fp-viewing-3 #fp-nav .ourExpertisePage li a.active span,
+.fp-slidesNav .ourExpertisePage li a.active span,
+.fp-viewing-5 #fp-nav .ourExpertisePage li a.active span,
+.fp-slidesNav .ourExpertisePage li a.active span,
+.fp-viewing-1 #fp-nav .googleCloud li a.active span,
+.fp-slidesNav .googleCloud li a.active span,
+.fp-viewing-2 #fp-nav .googleCloud li a.active span,
+.fp-slidesNav .googleCloud li a.active span,
+.fp-viewing-3 #fp-nav .googleCloud li a.active span,
+.fp-slidesNav .googleCloud li a.active span,
+.fp-viewing-4 #fp-nav .googleCloud li a.active span,
+.fp-slidesNav .googleCloud li a.active span,
+.fp-viewing-3 #fp-nav .our-customers-page li a.active span,
+.fp-slidesNav .our-customers-page li a.active span,
+.fp-viewing-4 #fp-nav .our-customers-page li a.active span,
+.fp-slidesNav .our-customers-page li a.active span,
+.fp-viewing-5 #fp-nav .our-customers-page li a.active span,
+.fp-slidesNav .our-customers-page li a.active span,
+.fp-viewing-6 #fp-nav .our-customers-page li a.active span,
+.fp-slidesNav .our-customers-page li a.active span,
+.fp-viewing-7 #fp-nav .our-customers-page li a.active span,
+.fp-slidesNav .our-customers-page li a.active span,
+/* .fp-viewing-3 #fp-nav .techolutionAward li a.active span,
+.fp-slidesNav .techolutionAward li a.active span,
+.fp-viewing-4 #fp-nav .techolutionAward li a.active span,
+.fp-slidesNav .techolutionAward li a.active span,
+.fp-viewing-5 #fp-nav .techolutionAward li a.active span,
+.fp-slidesNav .techolutionAward li a.active span,
+.fp-viewing-6 #fp-nav .techolutionAward li a.active span,
+.fp-slidesNav .techolutionAward li a.active span,
+.fp-viewing-7 #fp-nav .techolutionAward li a.active span,
+.fp-slidesNav .techolutionAward li a.active span, */
+#fp-nav .success-stories-page li a.active span,
+.fp-slidesNav .success-stories-page li a.active span,
+/* .fp-viewing-8 #fp-nav .techolutionAward li a.active span,
+.fp-slidesNav .techolutionAward li a.active span, */
+.fp-viewing-8 #fp-nav .our-customers-page li a.active span,
+.fp-slidesNav .our-customers-page li a.active span,
+.fp-viewing-1 #fp-nav .ourTeam li a.active span,
+.fp-slidesNav .ourTeam li a.active span,
+.fp-viewing-2 #fp-nav .ourTeam li a.active span,
+.fp-slidesNav .ourTeam li a.active span,
+.fp-viewing-3 #fp-nav .ourTeam li a.active span,
+.fp-slidesNav .ourTeam li a.active span,
+.fp-viewing-4 #fp-nav .ourTeam li a.active span,
+.fp-slidesNav .ourTeam li a.active span,
+.fp-viewing-2 #fp-nav .enterpriseCloudPage li a.active span,
+.fp-slidesNav .enterpriseCloudPage li a.active span,
+.fp-viewing-3 #fp-nav .enterpriseCloudPage li a.active span,
+.fp-slidesNav .enterpriseCloudPage li a.active span,
+.fp-viewing-4 #fp-nav .enterpriseCloudPage li a.active span,
+.fp-slidesNav .enterpriseCloudPage li a.active span,
+.fp-viewing-5 #fp-nav .enterpriseCloudPage li a.active span,
+.fp-slidesNav .enterpriseCloudPage li a.active span,
+.fp-viewing-2 #fp-nav .productInnovation li a.active span,
+.fp-slidesNav .productInnovation li a.active span,
+.fp-viewing-3 #fp-nav .productInnovation li a.active span,
+.fp-slidesNav .productInnovation li a.active span,
+.fp-viewing-2 #fp-nav .realWordAI li a.active span,
+.fp-slidesNav .realWordAI li a.active span,
+.fp-viewing-4 #fp-nav .realWordAI li a.active span,
+.fp-slidesNav .realWordAI li a.active span,
+.fp-viewing-5 #fp-nav .realWordAI li a.active span,
+.fp-slidesNav .realWordAI li a.active span,
+.fp-viewing-2 #fp-nav .enterpriseCloudFoundation li a.active span,
+.fp-slidesNav .enterpriseCloudFoundation li a.active span,
+.fp-viewing-3 #fp-nav .enterpriseCloudFoundation li a.active span,
+.fp-slidesNav .enterpriseCloudFoundation li a.active span,
+.fp-viewing-2 #fp-nav .cloudSecurity li a.active span,
+.fp-slidesNav .cloudSecurity li a.active span,
+.fp-viewing-2 #fp-nav .governance li a.active span,
+.fp-slidesNav .governance li a.active span,
+.fp-viewing-2 #fp-nav .enterpriseDataManagement li a.active span,
+.fp-slidesNav .enterpriseDataManagement li a.active span,
+.fp-viewing-3 #fp-nav .enterpriseDataManagement li a.active span,
+.fp-slidesNav .enterpriseDataManagement li a.active span,
+.fp-viewing-2 #fp-nav .edgeComputeIOT li a.active span,
+.fp-slidesNav .edgeComputeIOT li a.active span,
+.fp-viewing-2 #fp-nav .cloudMigration li a.active span,
+.fp-slidesNav .cloudMigration li a.active span,
+.fp-viewing-4 #fp-nav .cloudMigration li a.active span,
+.fp-slidesNav .cloudMigration li a.active span,
+.fp-viewing-2 #fp-nav .cloudAutomation li a.active span,
+.fp-slidesNav .cloudAutomation li a.active span,
+.fp-viewing-2 #fp-nav .realTimeDataStreaming li a.active span,
+.fp-slidesNav .realTimeDataStreaming li a.active span,
+.fp-viewing-2 #fp-nav .managedServices li a.active span,
+.fp-slidesNav .managedServices li a.active span,
+.fp-viewing-2 #fp-nav .hybridCloud li a.active span,
+.fp-slidesNav .hybridCloud li a.active span,
+.fp-viewing-2 #fp-nav .applicationModernization li a.active span,
+.fp-slidesNav .applicationModernization li a.active span {
+  background: #000000 !important;
+}
+
+.techolutionAward {
+  transition: all 0.4s !important;
+}
+
+.techolutionAward .bm-burger-bars {
+  background-color: #5968E2 !important;
+}
+
+.techolutionAward .techo-logo {
+  background-image: url('../../images/techolutionBlackGreen.png');
+  transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+}
+
+.techolutionAward .techo-logo-mobile {
+  transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0My4yNSIgaGVpZ2h0PSIyMS4yNjMiIHZpZXdCb3g9IjAgMCA0My4yNSAyMS4yNjMiPg0KICA8ZyBpZD0iTG9nby1fQmxhY2siIGRhdGEtbmFtZT0iTG9nby0gQmxhY2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNiAtNDQpIj4NCiAgICA8cGF0aCBpZD0iRmlsbC0zNSIgZD0iTTIwLjY4NCwwbC0uMzc1LDkuMjQ3TDE3LjcxNSw3LjczN2wtMi44NTIsNC45MDdINy40bC01LDguNjE5TDAsMTkuODc5LDUuNzU3LDkuODc0aDcuNDYzbDIuMDI0LTMuNTIzTDEyLjU4Nyw0Ljc3OFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3LjEzNCA0NCkiIGZpbGw9IiM5NWMxM2QiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KICAgIDxwYXRoIGlkPSJwYXRoLTFfMDAwMDAxNDUwNDYzMDE0MjA1NzQ5MjI1NjAwMDAwMTMyMjE4MTE4MDA0NjkyMTI1OTFfIiBkPSJNNy44OTIsMFYyLjgxOEg2Ljc0OWEyLjUyOSwyLjUyOSwwLDAsMC0uODMuMTI1LDIuNzU1LDIuNzU1LDAsMCwwLS40NDUuMzc2LjgyNS44MjUsMCwwLDAtLjE5MS41LDEuNTMzLDEuNTMzLDAsMCwwLS4wNjMuNVY4LjA3NGEzLjM1OSwzLjM1OSwwLDAsMS0uMjU1LDEuMjUyLDMuMzM1LDMuMzM1LDAsMCwxLS41NzMuNjg5LDMuOTI2LDMuOTI2LDAsMCwxLS43NjMuMzEzLDMuMjM5LDMuMjM5LDAsMCwxLS43NjMuMTI5di4wNjJhMy4xNDUsMy4xNDUsMCwwLDEsLjc2My4wNjIsMS42NDcsMS42NDcsMCwwLDEsLjc2Ni4zMTQsMS4yNjQsMS4yNjQsMCwwLDEsLjU3My42ODksMi4zMDksMi4zMDksMCwwLDEsLjI1NSwxLjI1MnYzLjc1N2MwLC4xODguMDYzLjMxMy4wNjMuNWEuNy43LDAsMCwwLC4xOTEuNS42NTYuNjU2LDAsMCwwLC4xNzguMjM4LjY4NC42ODQsMCwwLDAsLjI2Ny4xMzksMi41MjksMi41MjksMCwwLDAsLjgyNy4xMjZINy44OTJ2Mi42MzFINS40NzdhMy42NTQsMy42NTQsMCwwLDEtMS4xNDUtLjE4OCwyLjUyMiwyLjUyMiwwLDAsMS0uOTU0LS42MjYsMi45ODUsMi45ODUsMCwwLDEtLjYzNi0xLjA2NCwzLjg1NywzLjg1NywwLDAsMS0uMjU1LTEuNTY2VjEzLjI3NWExLjIyNywxLjIyNywwLDAsMC0uMzE4LS44NzcsMS44LDEuOCwwLDAsMC0uNy0uNWMtLjI1NS0uMDYyLS41NzMtLjEyNi0uODI3LS4xODhBMi45NjUsMi45NjUsMCwwLDAsMCwxMS42NDdWOS4wMTZjLjEyNywwLC4zODEtLjA2Mi42MzYtLjA2MmExLjk4NCwxLjk4NCwwLDAsMCwuODI3LS4xODgsMi44MjQsMi44MjQsMCwwLDAsLjctLjUsMS4zNDQsMS4zNDQsMCwwLDAsLjMxOC0uODc3VjMuMzgxYTQuODEzLDQuODEzLDAsMCwxLC4xOTEtMS41QTMuNCwzLjQsMCwwLDEsMy4zMTQuODE1LDEuOTU2LDEuOTU2LDAsMCwxLDQuMjY4LjE4OCwzLjc1OCwzLjc1OCwwLDAsMSw1LjQ3NiwwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYgNDQuMjY2KSIgZmlsbD0iIzAyOGQ5YSIgZmlsbC1ydWxlPSJldmVub2RkIi8+DQogICAgPHBhdGggaWQ9IkNsaXAtMzMiIGQ9Ik0wLDBIMi41QTMuMTYzLDMuMTYzLDAsMCwxLDMuNTY4LjE4OGEyLjQ3NiwyLjQ3NiwwLDAsMSwuOTM5LjYzQTMuMDE2LDMuMDE2LDAsMCwxLDUuMTMzLDEuODlhMy45NTcsMy45NTcsMCwwLDEsLjI1MSwxLjU3NFY3LjVhMS4yNSwxLjI1LDAsMCwwLC4zMTMuODgyLDEuNzc1LDEuNzc1LDAsMCwwLC42ODguNWMuMjUxLjA2My41NjQuMTI2LjgxNC4xODlhMy4wNTMsMy4wNTMsMCwwLDAsLjY4OC4wNjN2Mi42NDVjLS4xODUsMC0uNDM4LjA2My0uNjg4LjA2M2ExLjcyNCwxLjcyNCwwLDAsMC0uODE0LjE4OSwyLjc4LDIuNzgsMCwwLDAtLjY4OC41LDEuMzcsMS4zNywwLDAsMC0uMzEzLjg4MnYzLjlBNS41MjEsNS41MjEsMCwwLDEsNS4xMzMsMTguOWEzLjQzNywzLjQzNywwLDAsMS0uNjI2LDEuMDcyLDIuMzU1LDIuMzU1LDAsMCwxLS45MzkuNTY3LDMuNjI5LDMuNjI5LDAsMCwxLTEuMTkuMTg5SDBWMTguMDc0SDEuMTI2YTIuNDQsMi40NCwwLDAsMCwuODE0LS4xMjYsMi43MywyLjczLDAsMCwwLC40MzgtLjM3OCwxLjY1MywxLjY1MywwLDAsMCwuMTg4LS41LDEuNTc0LDEuNTc0LDAsMCwwLC4wNjItLjVWMTIuNzg3YTMuNDQ0LDMuNDQ0LDAsMCwxLC4yNTEtMS4yNiwyLjA5NCwyLjA5NCwwLDAsMSwuNTY0LS42OTMsMS45MjIsMS45MjIsMCwwLDEsLjc1MS0uMzE1Yy4yNDgtLjA2Mi41LS4wNjIuNzUxLS4xMjZ2LS4wNjNhMy4wMywzLjAzLDAsMCwxLS43NTEtLjA2MywxLjM3LDEuMzcsMCwwLDEtLjc1MS0uMzE1QTEuMjY0LDEuMjY0LDAsMCwxLDIuODgsOS4yNiwyLjM2OSwyLjM2OSwwLDAsMSwyLjYyOSw4VjQuMjIzYzAtLjE4OS0uMDYyLS4zMTUtLjA2Mi0uNWEuNzE4LjcxOCwwLDAsMC0uMTg4LS41LjY0OS42NDksMCwwLDAtLjE3My0uMjM5LjY3Ny42NzcsMCwwLDAtLjI2NC0uMTQyLDIuNDQsMi40NCwwLDAsMC0uODE0LS4xMjZIMFYuMDYzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEuMzYxIDQ0LjI3NSkiIGZpbGw9IiMwMjhkOWEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KICA8L2c+DQo8L3N2Zz4NCg==');
+}
+
+.fp-viewing-0 #fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  opacity: 0.8;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #ffffff !important;
+  opacity: 0.7;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+  background: #ffffff !important;
+  opacity: 1;
+}
+
+#up-arrow-naviagtion {
+  cursor: pointer;
+  position: absolute;
+  right: 9px;
+  top: -14px;
+}
+
+#fp-nav {
+  bottom: 0rem;
+}
+
+/* #fp-nav.fp-right-indexPage{
+  bottom: -6rem !important;
+} */
+
+/* #fp-nav.fp-right-ourPurposePage{
+  bottom: 0rem;
+}
+
+#fp-nav.fp-right-cocreatePage{
+  bottom: -1rem;
+}
+
+#fp-nav.fp-right-ourExpertisePage{
+  bottom: -1rem;
+} */
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  height: 34px !important;
+  width: 7px !important;
+  margin: -6px 0 0 -6px !important;
+  left: .85rem;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border-radius: 3px !important;
+  width: 2px !important;
+  height: 20.5px !important;
+  /* height: 11px !important; */
+  opacity: 0.4;
+}
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+  margin: -2px 0 0 -2px !important;
+}
+
+.fp-viewing-0 #fp-nav {
+  display: none;
+}
+
+/* #fp-nav ul {
+  height: 0rem !important;
+    margin-top: 44rem !important;
+}
+#fp-nav ul li, .fp-slidesNav ul li {
+  height: 3px !important;
+
+} */
+
+#fp-nav.fp-right-indexPage {
+  bottom: 0rem !important;
+}
+
+#fp-nav.fp-right-indexPage .indexPage li,
+.fp-slidesNav .indexPage li {
+  height: 5px;
+}
+
+#fp-nav.fp-right-indexPage .indexPage li a span,
+.fp-slidesNav .indexPage li a span {
+  height: 12.5px !important;
+}
+
+#fp-nav .indexPage li a.active span,
+#fp-nav .indexPage li:hover a.active span,
+.fp-slidesNav .indexPage li a.active span,
+.fp-slidesNav .indexPage li:hover a.active span {
+  height: 30.5px !important;
+}
+
+@media screen and (max-width: 500px) {
+  #fp-nav {
+    bottom: 2rem !important;
+  }
+
+  #fp-nav.fp-right-indexPage {
+    bottom: 1rem !important;
+  }
+
+  #fp-nav.fp-right-indexPage .indexPage li,
+  .fp-slidesNav .indexPage li {
+    height: 7px;
+  }
+
+  #fp-nav.fp-right-indexPage .indexPage li a span,
+  .fp-slidesNav .indexPage li a span {
+    height: 9.5px !important;
+  }
+
+  #fp-nav .indexPage li a.active span,
+  #fp-nav .indexPage li:hover a.active span,
+  .fp-slidesNav .indexPage li a.active span,
+  .fp-slidesNav .indexPage li:hover a.active span {
+    height: 28.5px !important;
+  }
+
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    height: 16px !important;
+  }
+
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    width: 0.8px !important;
+  }
+
+  #fp-nav {
+    right: 10px !important;
+  }
+
+  #up-arrow-naviagtion {
+    right: 4px;
+  }
+
+  #fp-nav ul li,
+  .fp-slidesNav ul li {
+    margin: 2px !important;
+  }
+
+  #fp-nav ul li a.active span,
+  #fp-nav ul li:hover a.active span,
+  .fp-slidesNav ul li a.active span,
+  .fp-slidesNav ul li:hover a.active span {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+#fp-nav ul.ourTeam li:nth-child(1) {
+  display: none;
+}

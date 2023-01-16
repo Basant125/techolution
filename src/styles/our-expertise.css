@@ -1,0 +1,148 @@
+.our_expertise_section .fp-overflow .main_section_content {
+  margin-top: 12vh;
+}
+.our_expertise_section.successStories .fp-overflow,
+.our_expertise_section.aboutCocreate .fp-overflow {
+margin-top: 150px;
+}
+.our_expertise_section .fp-overflow .section-content-title {
+margin-top: -20vh;
+width: 100%;
+}
+.ourExpertisePage .our_expertise_section.section-ourexpertise-3 .fp-overflow .main_section_content {
+  margin-top: 6px;
+  width: 100%;
+  color: #707070;
+  font-size: var(--font-small);
+  font-family: "Roboto";
+}
+.ourExpertisePage .our_expertise_section.section-ourexpertise-4 .fp-overflow .main_section_content {
+  margin-top: unset;
+}
+.our_expertise_section .fp-overflow .section-content-title {
+  margin-top: -20vh;
+  width: 100%;
+}
+.ourExpertisePage .our_expertise_section.section-ourexpertise-3 .fp-overflow .buttons-2 {
+  margin-top: 6%;
+}
+
+
+.ourExpertisePage .our_expertise_section.section-ourexpertise-1 .dropbtn {
+  background: transparent;
+  color: #ffff;
+  border: 1px solid #ffff;
+  font-weight: bold;
+}
+
+.ourExpertisePage .our_expertise_section.section-ourexpertise-1 .dropdown-content {
+  background: transparent;
+  border: 1px solid #ffff;
+  border-top: 0;
+  top: 49px;
+}
+
+.ourExpertisePage .our_expertise_section.section-ourexpertise-1 .dropdown-content a:first-child {
+  border-top: 0;
+}
+
+.ourExpertisePage .our_expertise_section.section-ourexpertise-1 .dropdown-content a {
+  border-top: 1px solid #ffff;
+  color: #ffff;
+}
+
+.ourExpertisePage .our_expertise_section.section-ourexpertise-1 .dropdown-content a {
+  border-top: 1px solid #ffff;
+  color: #ffff;
+}
+@media screen and (max-width: 1400px){
+  .ourExpertisePage .our_expertise_section.section-ourexpertise-1 .dropdown-content{
+    top: 39px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .our_expertise_section .fp-overflow .section-content-title {
+    margin-top: -16vh;
+  }
+}
+@media screen and (max-width: 780px) {
+  .our_expertise_section .fp-overflow .section-content-title {
+    margin-top: -15vh;
+  }
+  .our_expertise_section .co-create-container {
+    top:41px; 
+  }
+  .our_expertise_section .dropbtn{
+    width: 180px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .our_expertise_section .dropdown-content a{
+    font-size: 13px;
+  }
+  .ourExpertisePage .our_expertise_section.section-ourexpertise-3 .fp-overflow .buttons-2 {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .our_expertise_section .fp-overflow .section-content-title {
+    margin-bottom: 2vh;
+    margin-top: -15vh;
+  }
+  .our_expertise_section .fp-overflow .main_section_content {
+    margin-top: 11vh;
+  }
+  .our_expertise_section .fp-overflow .section-content-title {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .our_expertise_section .fp-overflow .buttons-2 {
+    margin-top: 20%;
+  }
+  .ourExpertisePage .our_expertise_section.section-ourexpertise-3 .fp-overflow .buttons-2 {
+    margin-top: 10%;
+  }
+  .our_expertise_section .fp-overflow .section-content {
+    width: 28rem;
+  }
+  .ourExpertisePage .our_expertise_section.section-ourexpertise-3 .fp-overflow .section-content {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .our_expertise_section .dropbtn{
+    width: 164px;
+    height: 38px;
+    font-weight: 500;
+  }
+  .fp-viewing-1 .ourExpertisePage .dropdown-content{
+    top: 37px;
+  }
+  .our_expertise_section .co-create-container {
+    top:0; 
+  }
+  .ourExpertisePage .our_expertise_section.section-ourexpertise-3 .fp-overflow .main_section_content {
+    font-size: 13px;
+  }
+
+}
+@media screen and (max-width: 320px) {
+  .our_expertise_section .fp-overflow .section-content {
+    width: 23rem;
+  }
+}
+
+@media screen and (max-height: 630px) and (min-width: 1150px) {
+  .ourExpertisePage .our_expertise_section.section-ourexpertise-3 .fp-overflow .buttons-2 {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-height: 620px) and (min-width: 1150px) {
+  .ourExpertisePage .our_expertise_section.section-ourexpertise-3 .fp-overflow .buttons-2 {
+    margin-top: 4%;
+  }
+}
+@media screen and (max-height: 515px) and (min-width: 1150px) {
+  .ourExpertisePage .our_expertise_section.section-ourexpertise-3 .fp-overflow .buttons-2 {
+    margin-top: 3%;
+  }
+}

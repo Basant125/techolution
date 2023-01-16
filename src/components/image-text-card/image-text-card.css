@@ -1,0 +1,103 @@
+.image_text_card_container{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 100px;
+    margin-top: 50px;
+}
+.image_text_card {
+ width: 290px;
+height: 230px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 20px 20px #656FEC19;
+border-radius: 35px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: var(--font-24);
+font-family: "Roboto";
+cursor: pointer;
+}
+.image_text_card:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    transition: transform 0.5s;
+    border: 1px solid #028D9A;
+}
+.image_text_card .card_image{
+    width: 123px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.image_text_card .card_text {
+    margin-top: 20px;
+    color:  #181818;
+}
+@media screen and (max-width: 1150px) {
+    .image_text_card_container{
+        grid-gap: 25px;
+        margin-top: 10px;
+    }
+    .image_text_card {
+        width: 200px;
+        height: 190px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .image_text_card_container{
+        grid-gap: 19px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .image_text_card {
+        width: 180px;
+        height: 160px;
+       border-radius: 15px;
+    }
+    .image_text_card_container{
+        /* grid-template-columns: repeat(1, 1fr); */
+        grid-gap: 19px;
+        width: 100vw;
+        height: 250px;
+        align-items: center;
+        padding: 0 20%;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+        overflow-x: auto;
+    }
+ 
+  .image_text_card_container::-webkit-scrollbar { 
+    display: none;
+  }
+    .image_text_card .card_image {
+        width: 42px;
+        height: 31px;
+    }
+    .section-ourexpertise-3 .image_text_card_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: unset;
+    padding: 0;
+    height: unset;
+    overflow-x: unset;
+    }
+    .section-ourexpertise-3 .image_text_card_container a:last-child{
+        grid-column: 1 / span 2;
+        justify-self: center;
+    }
+    .section-ourexpertise-3 .image_text_card_container .image_text_card{
+    width: 150px;
+    height: 113px;
+    border-radius: 16px;
+    }
+    .section-ourexpertise-3 .image_text_card_container .image_text_card .card_text{
+        font-weight: 400;
+    }
+}

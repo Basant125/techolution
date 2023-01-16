@@ -1,0 +1,94 @@
+.carouselContainer{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 5.4rem;
+    width: 100vw;
+    display: flex;
+    gap: 3rem;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 5rem; /* For card shadow not to break*/
+    scroll-snap-type: x mandatory;
+}
+.carouselContainer::-webkit-scrollbar { 
+    display: none;
+}
+
+.main_section_content_image_desktop{
+    width: 90%; 
+    margin: auto;
+     display: block;
+}
+
+.main_section_content_image_mobile{
+    width: 90%; 
+    margin: auto;
+    display: none;
+}
+
+.cardContainer{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100vw;
+    transition: all 1s ease-out;
+    margin-bottom: 1rem;
+    scroll-snap-align: start;
+}
+@media screen and (max-width: 426px) and (max-height: 600px) {
+    .main_section_content_image_mobile{
+        height: 90%; 
+    }
+}
+@media (max-height: 650px) and (max-width: 1260px) {
+    .carouselContainer{
+        padding-bottom: 0;
+    }
+}
+@media (max-height: 850px) {
+    .carouselContainer{
+      margin-top: 3rem;
+    }
+}
+@media (max-height: 800px) {
+    .carouselContainer{
+      margin-top: 1rem;
+      padding-bottom: 3rem;
+    }
+    .cardContainer{
+        margin-bottom: 0;
+    }
+    .cardContainer{
+        gap: 2rem;
+    }
+}
+@media (max-width: 800px) {
+    .cardContainer{
+       gap: 1.5rem;
+    }
+}
+@media (max-width: 500px) {
+    .cardContainer{
+        width: unset;
+    }
+    .carouselContainer{
+        scroll-snap-type: none;
+    }
+    .main_section_content_image_mobile{
+        display: block;
+    }
+    .main_section_content_image_desktop{
+        display: none;
+    }
+}
+
+@media (max-width: 330px) {
+    .carouselContainer{
+        height: 248px;
+        margin-top: 1rem;
+    }
+}

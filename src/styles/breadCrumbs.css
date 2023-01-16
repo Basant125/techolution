@@ -1,0 +1,494 @@
+.backButton {
+    display: none;
+}
+
+nav.breadcrumb {
+    position: absolute;
+    bottom: 42px;
+    left: 42px;
+    flex-direction: row;
+    font-size: 1.5rem;
+    gap: 5px;
+    flex-wrap: wrap;
+    max-width: 40%;
+    /* To Avoid overlap with down arrow*/
+}
+
+nav .breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav .breadcrumb__item {
+    /* margin-right: 4px; */
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+nav .breadcrumb__separator {
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+    color: transparent;
+}
+
+
+/***
+Home Page bread crumb css
+**/
+.indexPage .breadcrumb,
+.indexPage .backButonBreadCrumb {
+    display: none;
+}
+
+/***
+co create Page bread crumb css
+**/
+
+.fp-viewing-0 .cocreatePage nav.breadcrumb,
+.fp-viewing-2 .cocreatePage nav.breadcrumb,
+.fp-viewing-3 .cocreatePage nav.breadcrumb,
+.fp-viewing-5 .cocreatePage nav.breadcrumb {
+    color: #656FEC
+}
+
+.fp-viewing-1 .cocreatePage nav.breadcrumb,
+.fp-viewing-4 .cocreatePage nav.breadcrumb,
+.fp-viewing-6 .cocreatePage nav.breadcrumb {
+    color: #FFFF;
+}
+
+.fp-viewing-0 .cocreatePage nav .breadcrumb__separator,
+.fp-viewing-2 .cocreatePage nav .breadcrumb__separator,
+.fp-viewing-3 .cocreatePage nav .breadcrumb__separator,
+.fp-viewing-5 .cocreatePage nav .breadcrumb__separator {
+    background-image: url(../images/rightarrowsmall_purpose.svg);
+}
+
+.fp-viewing-1 .cocreatePage nav .breadcrumb__separator,
+.fp-viewing-4 .cocreatePage nav .breadcrumb__separator,
+.fp-viewing-6 .cocreatePage nav .breadcrumb__separator {
+    background-image: url(../images/rightarrowsmall_white.svg);
+}
+
+.fp-viewing-7 .cocreatePage .breadcrumb,
+.fp-viewing-7 .cocreatePage .backButonBreadCrumb {
+    display: none;
+}
+
+
+/***
+Our Purpose Page bread crumb css
+**/
+
+.fp-viewing-0 .ourPurposePage nav.breadcrumb,
+.fp-viewing-2 .ourPurposePage nav.breadcrumb {
+    color: #2941B2
+}
+
+.fp-viewing-1 .ourPurposePage nav.breadcrumb {
+    color: #FFFF;
+}
+
+.fp-viewing-0 .ourPurposePage nav .breadcrumb__separator,
+.fp-viewing-2 .ourPurposePage nav .breadcrumb__separator {
+    background-image: url(../images/rightarrowsmall_purpose.svg);
+}
+
+.fp-viewing-1 .ourPurposePage nav .breadcrumb__separator {
+    background-image: url(../images/rightarrowsmall_white.svg);
+}
+
+.fp-viewing-3 .ourPurposePage .breadcrumb,
+.fp-viewing-3 .ourPurposePage .backButonBreadCrumb,
+.fp-viewing-5 .cocreatePage .breadcrumb,
+.fp-viewing-5 .cocreatePage .backButonBreadCrumb {
+    display: none;
+}
+
+.fp-viewing-0 .techolutionAward nav .breadcrumb__separator,
+.fp-viewing-1 .techolutionAward nav .breadcrumb__separator,
+.fp-viewing-2 .techolutionAward nav .breadcrumb__separator,
+.fp-viewing-3 .techolutionAward nav .breadcrumb__separator,
+.fp-viewing-4 .techolutionAward nav .breadcrumb__separator {
+    background-image: url(../images/rightarrowsmall_purpose.svg);
+}
+
+.techolutionAward nav.breadcrumb {
+    color: #656FEC;
+}
+
+.fp-viewing-5 .techolutionAward .breadcrumb {
+    display: none;
+}
+
+/***
+Expertise Page bread crumb css
+**/
+
+.fp-viewing-0 .ourExpertisePage nav.breadcrumb,
+.fp-viewing-2 .ourExpertisePage nav.breadcrumb,
+.fp-viewing-3 .ourExpertisePage nav.breadcrumb,
+.fp-viewing-0 .enterpriseCloudPage nav.breadcrumb,
+.fp-viewing-2 .enterpriseCloudPage nav.breadcrumb,
+.fp-viewing-3 .enterpriseCloudPage nav.breadcrumb,
+.fp-viewing-4 .enterpriseCloudPage nav.breadcrumb,
+.fp-viewing-0 .dynamicTemplate nav.breadcrumb,
+.fp-viewing-1 .dynamicTemplate .ourTeam nav.breadcrumb,
+.fp-viewing-2 .dynamicTemplate nav.breadcrumb,
+.fp-viewing-3 .dynamicTemplate nav.breadcrumb,
+.fp-viewing-4 .dynamicTemplate .realWordAI nav.breadcrumb {
+    color: #944EDC
+}
+
+.fp-viewing-1 .ourExpertisePage nav.breadcrumb,
+.fp-viewing-4 .ourExpertisePage nav.breadcrumb,
+.fp-viewing-1 .enterpriseCloudPage nav.breadcrumb,
+.fp-viewing-1 .dynamicTemplate nav.breadcrumb,
+.fp-viewing-3 .dynamicTemplate .realWordAI nav.breadcrumb {
+    color: #FFFF;
+}
+
+.dynamicTemplate .googleCloud nav.breadcrumb {
+    color: #000;
+}
+
+.fp-viewing-0 .ourExpertisePage nav .breadcrumb__separator,
+.fp-viewing-2 .ourExpertisePage nav .breadcrumb__separator,
+.fp-viewing-3 .ourExpertisePage nav .breadcrumb__separator,
+.fp-viewing-0 .enterpriseCloudPage nav .breadcrumb__separator,
+.fp-viewing-2 .enterpriseCloudPage nav .breadcrumb__separator,
+.fp-viewing-3 .enterpriseCloudPage nav .breadcrumb__separator,
+.fp-viewing-4 .enterpriseCloudPage nav .breadcrumb__separator,
+.fp-viewing-0 .dynamicTemplate nav .breadcrumb__separator,
+.fp-viewing-1 .dynamicTemplate .ourTeam nav .breadcrumb__separator,
+.fp-viewing-2 .dynamicTemplate nav .breadcrumb__separator,
+.fp-viewing-3 .dynamicTemplate nav .breadcrumb__separator,
+.fp-viewing-4 .dynamicTemplate .realWordAI nav .breadcrumb__separator {
+    background-image: url(../images/rightarrowsmall_expertise.svg);
+}
+
+.fp-viewing-1 .ourExpertisePage nav .breadcrumb__separator,
+.fp-viewing-4 .ourExpertisePage nav .breadcrumb__separator,
+.fp-viewing-1 .enterpriseCloudPage nav .breadcrumb__separator,
+.fp-viewing-1 .dynamicTemplate nav .breadcrumb__separator,
+.fp-viewing-3 .dynamicTemplate .cloudMigration nav .breadcrumb__separator,
+.fp-viewing-3 .dynamicTemplate .realWordAI nav .breadcrumb__separator,
+.fp-viewing-2 .our-customers-page .breadcrumb__separator {
+    background-image: url(../images/rightarrowsmall_white.svg);
+}
+
+.fp-viewing-5 .ourExpertisePage .breadcrumb {
+    display: none;
+}
+
+/***
+Customers Page bread crumb css
+**/
+
+.our-customers-page nav.breadcrumb,
+.success-stories-page nav.breadcrumb {
+    color: #E16A56
+}
+
+.fp-viewing-2 .our-customers-page nav.breadcrumb {
+    color: #FFFF;
+}
+
+.our-customers-page nav .breadcrumb__separator,
+.success-stories-page nav .breadcrumb__separator {
+    background-image: url(../images/rightarrowsmall_ourCustomers.svg);
+}
+
+.fp-viewing-1 .our-customers-page nav .breadcrumb__separator {
+    background-image: url(../images/rightarrowsmall_white.svg);
+}
+
+.fp-viewing-8 .our-customers-page .breadcrumb,
+.fp-viewing-5 .success-stories-page .breadcrumb {
+    display: none;
+}
+
+/***
+Enterprise Cloud Page bread crumb css
+**/
+
+.fp-viewing-5 .enterpriseCloudPage .breadcrumb,
+.fp-viewing-5 .enterpriseCloudPage .backButonBreadCrumb {
+    display: none;
+}
+
+.fp-viewing-3 .dynamicTemplate .breadcrumb,
+.fp-viewing-3 .dynamicTemplate .backButonBreadCrumb,
+.fp-viewing-2 .dynamicTemplate .cloudSecurity .breadcrumb,
+.fp-viewing-2 .dynamicTemplate .cloudSecurity .backButonBreadCrumb,
+.fp-viewing-2 .dynamicTemplate .hybridCloud .breadcrumb,
+.fp-viewing-2 .dynamicTemplate .hybridCloud .backButonBreadCrumb,
+.fp-viewing-2 .dynamicTemplate .realTimeDataStreaming .breadcrumb,
+.fp-viewing-2 .dynamicTemplate .realTimeDataStreaming .backButonBreadCrumb,
+.fp-viewing-2 .dynamicTemplate .edgeComputeIOT .breadcrumb,
+.fp-viewing-2 .dynamicTemplate .edgeComputeIOT .backButonBreadCrumb,
+.fp-viewing-2 .dynamicTemplate .applicationModernization .breadcrumb,
+.fp-viewing-2 .dynamicTemplate .applicationModernization .backButonBreadCrumb,
+.fp-viewing-2 .dynamicTemplate .managedServices .breadcrumb,
+.fp-viewing-2 .dynamicTemplate .managedServices .backButonBreadCrumb,
+.fp-viewing-2 .dynamicTemplate .cloudAutomation .breadcrumb,
+.fp-viewing-2 .dynamicTemplate .cloudAutomation .backButonBreadCrumb,
+.fp-viewing-2 .dynamicTemplate .governance .breadcrumb,
+.fp-viewing-2 .dynamicTemplate .governance .backButonBreadCrumb,
+ß .fp-viewing-2 .dynamicTemplate .enterpriseDataManagement .backButonBreadCrumb,
+.fp-viewing-4 .dynamicTemplate .cloudMigration .breadcrumb,
+.fp-viewing-4 .dynamicTemplate .cloudMigration .backButonBreadCrumb,
+.fp-viewing-5 .dynamicTemplate .realWordAI .breadcrumb,
+.fp-viewing-5 .dynamicTemplate .realWordAI .backButonBreadCrumb,
+.fp-viewing-4 .dynamicTemplate .googleCloud .breadcrumb {
+    display: none;
+}
+
+.fp-viewing-3 .dynamicTemplate .realWordAI .breadcrumb,
+.fp-viewing-4 .dynamicTemplate .realWordAI .breadcrumb,
+.fp-viewing-3 .dynamicTemplate .googleCloud .breadcrumb {
+    display: flex;
+}
+
+.fp-viewing-3 .dynamicTemplate .cloudMigration .breadcrumb {
+    display: flex;
+    color: #FFFF;
+}
+
+.backButonBreadCrumb {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 26px;
+    border: none;
+    background: transparent;
+    gap: 4px;
+    align-items: center;
+}
+
+.arrowInverted {
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    color: transparent;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 450px) {
+
+    nav.breadcrumb,
+    .fp-viewing-3 .dynamicTemplate .realWordAI .breadcrumb,
+    .fp-viewing-4 .dynamicTemplate .realWordAI .breadcrumb,
+    .fp-viewing-4 .dynamicTemplate .ourTeam .backButonBreadCrumb,
+    .fp-viewing-3 .dynamicTemplate .googleCloud .breadcrumb {
+        display: none;
+    }
+
+    .backButonBreadCrumb,
+    .fp-viewing-3 .googleCloud .backButonBreadCrumb {
+        display: flex;
+    }
+
+    .fp-viewing-3 .dynamicTemplate .realWordAI .backButonBreadCrumb,
+    .fp-viewing-4 .dynamicTemplate .realWordAI .backButonBreadCrumb,
+    .fp-viewing-1 .dynamicTemplate .ourTeam .backButonBreadCrumb,
+    .fp-viewing-3 .dynamicTemplate .ourTeam .backButonBreadCrumb {
+        display: flex;
+    }
+
+    .fp-viewing-3 .dynamicTemplate .realWordAI .backButonBreadCrumb {
+        color: #FFFF;
+    }
+
+    .fp-viewing-4 .realWordAI .backButonBreadCrumb {
+        color: #944EDC;
+    }
+
+    .fp-viewing-3 .dynamicTemplate .realWordAI .arrowInverted {
+        background-image: url(../images/rightarrowsmall_white.svg);
+    }
+
+    .fp-viewing-4 .realWordAI .arrowInverted {
+        background-image: url(../images/rightarrowsmall_expertise.svg);
+    }
+
+    /***
+    co create Page bread crumb css
+    **/
+
+    .fp-viewing-0 .cocreatePage .backButonBreadCrumb,
+    .fp-viewing-2 .cocreatePage .backButonBreadCrumb,
+    .fp-viewing-3 .cocreatePage .backButonBreadCrumb,
+    .fp-viewing-5 .cocreatePage .backButonBreadCrumb {
+        color: #656FEC
+    }
+
+    .fp-viewing-1 .cocreatePage .backButonBreadCrumb,
+    .fp-viewing-4 .cocreatePage .backButonBreadCrumb,
+    .fp-viewing-6 .cocreatePage .backButonBreadCrumb {
+        color: #FFFF;
+    }
+
+    .fp-viewing-0 .cocreatePage .arrowInverted,
+    .fp-viewing-2 .cocreatePage .arrowInverted,
+    .fp-viewing-3 .cocreatePage .arrowInverted,
+    .fp-viewing-5 .cocreatePage .arrowInverted {
+        background-image: url(../images/rightarrowsmall_purpose.svg);
+    }
+
+    .dynamicTemplate .googleCloud .arrowInverted {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:svgjs='http://svgjs.com/svgjs' xmlns:xlink='http://www.w3.org/1999/xlink' width='288' height='288'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:svgjs='http://svgjs.com/svgjs' xmlns:xlink='http://www.w3.org/1999/xlink' width='288' height='288' viewBox='0 0 288 288'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='288' height='288' enable-background='new 0 0 49.656 49.656' viewBox='0 0 49.656 49.656'%3E%3Cpolygon fill='%2300000' points='14.535 48.242 11.707 45.414 32.292 24.828 11.707 4.242 14.535 1.414 37.949 24.828' class='color00ad97 svgShape color000'/%3E%3Cpath fill='%2300000' d='M14.535,49.656l-4.242-4.242l20.585-20.586L10.293,4.242L14.535,0l24.829,24.828L14.535,49.656z M13.121,45.414l1.414,1.414l22-22l-22-22l-1.414,1.414l20.585,20.586L13.121,45.414z' class='color00ad97 svgShape color000'/%3E%3C/svg%3E%3C/svg%3E%3C/svg%3E") !important;
+    }
+
+    .fp-viewing-1 .cocreatePage .arrowInverted,
+    .fp-viewing-4 .cocreatePage .arrowInverted,
+    .fp-viewing-6 .cocreatePage .arrowInverted {
+        background-image: url(../images/rightarrowsmall_white.svg);
+    }
+
+
+    /***
+    Our Purpose Page bread crumb css
+    **/
+    .fp-viewing-0 .ourPurposePage .backButonBreadCrumb,
+    .fp-viewing-2 .ourPurposePage .backButonBreadCrumb {
+        color: #2941B2
+    }
+
+    .fp-viewing-1 .ourPurposePage .backButonBreadCrumb {
+        color: #FFFF;
+    }
+
+    .fp-viewing-0 .ourPurposePage .arrowInverted,
+    .fp-viewing-2 .ourPurposePage .arrowInverted {
+        background-image: url(../images/rightarrowsmall_purpose.svg);
+    }
+
+    .fp-viewing-1 .ourPurposePage .arrowInverted {
+        background-image: url(../images/rightarrowsmall_white.svg);
+    }
+
+
+    /***
+    Expertise Page bread crumb css
+    **/
+
+    .fp-viewing-0 .ourExpertisePage .backButonBreadCrumb,
+    .fp-viewing-2 .ourExpertisePage .backButonBreadCrumb,
+    .fp-viewing-3 .ourExpertisePage .backButonBreadCrumb {
+        color: #944EDC
+    }
+
+    .fp-viewing-1 .ourExpertisePage .backButonBreadCrumb,
+    .fp-viewing-4 .ourExpertisePage .backButonBreadCrumb {
+        color: #FFFF;
+    }
+
+    .fp-viewing-0 .ourExpertisePage .arrowInverted,
+    .fp-viewing-2 .ourExpertisePage .arrowInverted,
+    .fp-viewing-3 .ourExpertisePage .arrowInverted {
+        background-image: url(../images/rightarrowsmall_expertise.svg);
+    }
+
+    .fp-viewing-1 .ourExpertisePage .arrowInverted,
+    .fp-viewing-4 .ourExpertisePage .arrowInverted {
+        background-image: url(../images/rightarrowsmall_white.svg);
+    }
+
+    .fp-viewing-5 .ourExpertisePage .backButonBreadCrumb,
+    .fp-viewing-4 .googleCloud .backButonBreadCrumb {
+        display: none;
+    }
+
+    /***
+    Enterprise Cloud Page bread crumb css
+    **/
+
+    .fp-viewing-0 .enterpriseCloudPage .backButonBreadCrumb,
+    .fp-viewing-2 .enterpriseCloudPage .backButonBreadCrumb,
+    .fp-viewing-3 .enterpriseCloudPage .backButonBreadCrumb,
+    .fp-viewing-4 .enterpriseCloudPage .backButonBreadCrumb,
+    .fp-viewing-0 .dynamicTemplate .backButonBreadCrumb,
+    .fp-viewing-2 .dynamicTemplate .backButonBreadCrumb,
+    .fp-viewing-3 .dynamicTemplate .backButonBreadCrumb,
+    .fp-viewing-1 .dynamicTemplate .ourTeam .backButonBreadCrumb {
+        color: #944EDC
+    }
+
+    .dynamicTemplate .googleCloud .backButonBreadCrumb,
+    .fp-viewing-1 .dynamicTemplate .googleCloud .backButonBreadCrumb {
+        color: #000;
+    }
+
+    .fp-viewing-1 .enterpriseCloudPage .backButonBreadCrumb,
+    .fp-viewing-1 .dynamicTemplate .backButonBreadCrumb {
+        color: #FFFF;
+    }
+
+    .fp-viewing-0 .enterpriseCloudPage .arrowInverted,
+    .fp-viewing-2 .enterpriseCloudPage .arrowInverted,
+    .fp-viewing-3 .enterpriseCloudPage .arrowInverted,
+    .fp-viewing-4 .enterpriseCloudPage .arrowInverted,
+    .fp-viewing-0 .dynamicTemplate .arrowInverted,
+    .fp-viewing-2 .dynamicTemplate .arrowInverted,
+    .fp-viewing-1 .dynamicTemplate .ourTeam .arrowInverted,
+    .fp-viewing-3 .dynamicTemplate .arrowInverted {
+        background-image: url(../images/rightarrowsmall_expertise.svg);
+    }
+
+    .fp-viewing-1 .enterpriseCloudPage .arrowInverted,
+    .fp-viewing-1 .dynamicTemplate .arrowInverted {
+        background-image: url(../images/rightarrowsmall_white.svg);
+    }
+
+
+    /***
+    Customers Page bread crumb css
+    **/
+
+    .our-customers-page .backButonBreadCrumb,
+    .success-stories-page .backButonBreadCrumb {
+        color: #E16A56
+    }
+
+    .fp-viewing-2 .our-customers-page .backButonBreadCrumb {
+        color: #FFFF;
+    }
+
+    .our-customers-page .arrowInverted,
+    .success-stories-page .arrowInverted {
+        background-image: url(../images/rightarrowsmall_ourCustomers.svg);
+    }
+
+    .fp-viewing-2 .our-customers-page .arrowInverted {
+        background-image: url(../images/rightarrowsmall_white.svg);
+    }
+
+    .fp-viewing-8 .our-customers-page .backButonBreadCrumb,
+    .fp-viewing-5 .success-stories-page .backButonBreadCrumb {
+        display: none;
+    }
+
+
+    /*
+    cloudMigration
+    */
+    .fp-viewing-3 .dynamicTemplate .cloudMigration .breadcrumb {
+        display: none;
+    }
+
+    .fp-viewing-3 .dynamicTemplate .cloudMigration .backButonBreadCrumb {
+        display: flex;
+        color: #FFFF;
+    }
+
+    .fp-viewing-3 .dynamicTemplate .cloudMigration .arrowInverted {
+        background-image: url(../images/rightarrowsmall_white.svg);
+    }
+}

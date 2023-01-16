@@ -1,0 +1,102 @@
+.dropdownContainer{
+    position: relative;
+    margin-bottom: 10px;
+}
+.dropdown {
+    position: absolute;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    min-height: 4rem;
+    max-height: 4rem;
+    overflow: hidden;
+    top: 0.5em;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+    color: #444;
+    outline: none;
+    border: 0.06em solid transparent;
+    border-radius: 3rem;
+    background-color: transparent;
+    border: 1px solid #4E4E4E;
+    transition: 0.3s all ease-in-out;
+}
+.dropdown input:focus + label {
+    background: #def;
+}
+.dropdown input {
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    opacity: 0.01;
+}
+.dropdown label {
+    display: block;
+    padding-left: 1.4rem;
+    padding-right: 3.4rem;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s color ease-in-out;
+    font-size: 1.7rem;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.dropdown label:nth-child(2) {
+    margin-top: 4rem;
+    border-top: 0.08rem solid #4E4E4E;
+}
+.dropdown input:checked + label {
+    display: block;
+    border-top: none;
+    position: absolute;
+    top: 2px;
+    width: 100%;
+}
+.dropdown input:checked + label:nth-child(2) {
+    margin-top: 0;
+    position: relative;
+    border-bottom: 0.08rem solid #4E4E4E;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+.dropdown::after {
+    content: "";
+    position: absolute;
+    right: 0.9rem;
+    top: 1.7rem;
+    border: 0.5rem solid #4E4E4E;
+    border-color: #4E4E4E transparent transparent transparent;
+    transition: 0.4s all ease-in-out;
+}
+.dropdown.expanded {
+    border: 0.06em solid #4E4E4E;
+    border-radius: 0.25em;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px 0px;
+    max-height: unset;
+    border-radius: 20px;
+}
+
+.dropdown.expanded::after {
+    transform: rotate(-180deg);
+    top: 1.25rem;
+    right: 1rem;
+}
+.error{
+    color: rgb(255, 0, 0);
+    font-size: 1.4rem;
+    min-height: 20px;
+}
+.input__label {
+    color: #4E4E4E; 
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.chip_container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,28 @@
+
+.success-stories-page .bracket-image {
+    opacity: 0;
+}
+
+.success-stories-page .header-wrapper .heart_element:not(.sideBarOpen){
+  background-image: url(../images/heart-yellow.svg);
+}
+
+.success-stories-page .arrow-black {
+    display: block;
+}
+
+.fp-viewing-5 .success-stories-page .down_arrow .arrow-black,
+.success-stories-page .arrow-white
+{
+    display: none;
+}
+
+.fp-viewing-0 .success-stories-page .button-cl{
+    display: block;
+}
+
+.success-stories-page .success-story-section-0 .fp-overflow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

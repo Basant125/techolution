@@ -1,0 +1,328 @@
+.action-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 25px;
+  margin-top: 50px;
+  font-weight: 500;
+  max-width: 446px;
+}
+.grid-item {
+  flex: 40%;
+  display: flex;
+}
+.action-card {
+  width: 132px;
+  height: 118px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 30px 20px #656fec0d;
+  border-radius: 35px;
+  font-size: 12px;
+  font-family: "Roboto";
+  position: relative;
+  transition-duration: 200ms;
+}
+.action-card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #944edc;
+}
+.action-card .ham-menu-container {
+  width: 100%;
+  height: 60px;
+  padding: 30px 20px;
+}
+.ham-menu {
+  display: flex;
+  width: 12px;
+  height: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  /* z-index: 999; */
+}
+.ham-menu-dash {
+  width: 12px;
+  height: 2px;
+  background-color: #8b8b8b;
+}
+.action-card .card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.action-card .card-image {
+  width: 40px;
+  height: auto;
+}
+.action-card .card-text {
+  margin-top: 20px;
+  color: #181818;
+  max-width: 100px;
+  text-align: center;
+}
+
+.overlay-menu {
+  width: 80%;
+  height: 0px;
+  background: #f0f1fd 0% 0% no-repeat padding-box;
+  border-radius: 35px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  transition-duration: 80ms;
+  transition-timing-function: linear;
+}
+.overlay-items {
+  display: none;
+}
+.overlay-items .ham-menu {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 999;
+}
+.overlay-items .title {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  color: #000000;
+  text-align: center;
+  max-width: 50%;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.overlay-items .options-container {
+  position: absolute;
+  top: 90px;
+  left: 34px;
+  display: flex;
+  flex-direction: column;
+  color: #944edc;
+  font-weight: 500;
+  font-size: 14px;
+}
+.overlay-items .options-container .option {
+  cursor: pointer;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+}
+.option-logo {
+  margin-right: 20px;
+  height: 12px;
+  width: 12px;
+}
+.option-logo img {
+  height: 12px;
+  width: 12px;
+}
+.option-text,.option-text-link {
+  font-size: 12px;
+}
+.option-text-link{
+  font-family: "Roboto";
+  color: #944edc;
+  font-weight: 500;
+}
+
+/* --------------------------------------- */
+@media screen and (max-width: 500px) {
+  .action-card-container {
+    margin-top: 0;
+    height: 255px;
+    align-items: center;
+    width: 100vw;
+    padding: 0 20%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .action-card-container::-webkit-scrollbar { 
+    display: none;
+  }
+  .action-card .ham-menu-container {
+    position: absolute;
+    top: 25px;
+    left: 17px;
+    padding: 0!important;
+    width: 20%;
+    height: 30px!important;
+  }
+  .action-card .card-content {
+    justify-content: center;
+  }
+  .action-card {
+    width: 190px;
+    height: 180px;
+  }
+  .overlay-menu{
+    border-radius: 16px;
+  }
+   .overlay-menu .overlay-items .title{
+    white-space: nowrap;
+    max-width: unset;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100px;
+    transform: unset; 
+    top: 28px;
+    left: 47px;
+  }
+  .overlay-items .options-container {
+    top: 50px;
+    left: 19px;
+  }
+  .overlay-items .options-container .option{
+    margin-top:9px;
+  }
+
+
+  /* latest changes */
+  .co-create-container   .action-card-container {
+    height: unset;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+    grid-auto-rows: 110px;
+    flex-wrap: wrap;
+    grid-gap: 17px;
+    font-weight: 500;
+    max-width: 446px;
+    width: unset;
+    overflow-x: unset;
+  }
+ .action-card .ham-menu-container {
+    top: 16px;
+    left: 16px;
+  }
+  .grid-item{
+    display: flex;
+    width: 149px;
+}
+ .action-card {
+    width: 150px;
+    height: 113px;
+    border-radius: 16px;
+  }
+   .co-create-container {
+    scale: unset;
+    top: 0;
+  }
+ 
+  .action-card .card-text{
+    font-weight: 400;
+  }
+  .section-googleCloud-1 .co-create-container .action-card-container{
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 500px) and (max-height: 600px) {
+  .action-card-container {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .action-card {
+    width: 160px;
+    height: 165px;
+  }
+}
+@media screen and (min-width: 590px) {
+  .action-card {
+    width: 181.5px;
+    height: 165px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .action-card {
+    width: 209px;
+    height: 190px;
+  }
+  .action-card-container {
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px; */
+    margin-top: 50px;
+    max-width: 677px;
+  }
+  .grid-item {
+    flex: 30%;
+  }
+  .section-enterprisecloud-3 .grid-item-0,
+  .section-enterprisecloud-3 .grid-item-1 {
+    flex: 40% !important;
+  }
+  .section-enterprisecloud-3 .grid-item-0 {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 875px) {
+  .section-googleCloud-1 .grid-item-3
+  {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .action-card-container {
+    grid-gap: 35px;
+    max-width: 763px;
+  }
+  .action-card {
+    width: 231px;
+    height: 210px;
+  }
+  .action-card .card-image {
+    width: 60px;
+  }
+  .action-card .ham-menu-container {
+    height: 70px;
+  }
+  .overlay-items .options-container .option {
+    margin-top: 18px;
+  }
+  .overlay-items .title {
+    font-size: 15px;
+  }
+  .option-logo {
+    height: 15px;
+    width: 15px;
+  }
+  .option-logo img {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (min-height: 1080px) {
+  .action-card-container {
+    max-width: 850px;
+  }
+  .action-card {
+    width: 250px;
+    height: 228px;
+  }
+  .action-card .ham-menu-container {
+    height: 80px;
+  }
+  .overlay-items .options-container .option {
+    margin-top: 23px;
+  }
+  .overlay-items .title {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .section-googleCloud-2 .action-card-container {
+    max-width: 90vw;
+  }
+  .section-googleCloud-2 .grid-item  {
+    flex: 22%;
+  }
+}

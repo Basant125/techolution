@@ -1,0 +1,119 @@
+.dropbtn {
+    color: white;
+    border: none;
+    width: 250px;
+    height: 50px;
+    background: transparent linear-gradient(270deg, #656FEC 0%, #8753F2 100%) 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 500;
+  }
+  .our_expertise_section .dropbtn{
+    background: transparent linear-gradient(270deg, #8E4FEB 0%, #9F4EC4 100%) 0% 0% no-repeat padding-box;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(200 204 255 / 33%);
+    min-width: -webkit-fill-available;
+    z-index: 1;
+    border-radius: 0 0 6px 6px;
+  }
+  .our_expertise_section .dropdown-content{
+    background-color: rgb(196 170 251 / 33%);
+  }
+  
+  .dropdown-content a {
+    color: #404040;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 0.1px solid rgb(112 112 112 / 14%);
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Roboto";
+    cursor: pointer;
+    font-weight: 500;
+  }
+    
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .successStories .dropbtn {
+    background: transparent;
+    color: #ffff;
+    border: 1px solid #ffff;
+    font-weight: bold;
+  }
+  
+  .successStories .dropdown-content {
+    background: transparent;
+    border: 1px solid #ffff;
+    border-top: 0;
+    top: 49px;
+  }
+  
+  .successStories .dropdown-content a {
+    border-top: 1px solid #ffff;
+    color: #ffff;
+  }
+
+  .successStories .dropdown-content a:first-child {
+    border-top: 0;
+  }
+
+
+@media screen and (max-width: 1400px) {
+     .dropbtn {
+      width: 200px;
+      height: 40px;
+    }
+    .dropdown-content, .successStories .dropdown-content{
+      top: 39px;
+    }
+    .dropdown-content a, .successStories .dropdown-content a {
+      font-size: 16px;
+      height: 40px;
+      padding: 10px 0;
+    }
+}
+
+/** 
+ height > 600 && height < 850 && width > 1250 && width <1750 the numbers are used in dropdown-button.js.
+ If you are changing below media query kindly update it in component too in dropdownClick method.
+**/
+@media screen and (min-height:600px) and (max-height:850px) and (min-width:1250px) and (max-width:1750px){
+ .dropdown .dropdown-content, .dropdown:hover .dropdown-content{
+   display: none;
+ }
+ .dropbtn{
+   cursor: pointer;
+ }
+}
+
+@media screen and (max-width:500px){
+   .dropbtn{
+    width: 164px;
+    height: 38px;
+    font-size: var(--font-small);
+  }  
+  .dropdown .dropdown-content, .dropdown:hover .dropdown-content{
+    display: none;
+  }
+
+  .dropdown-content, .successStories .dropdown-content{
+    top: 37px;
+  }
+  .dropdown-content a, .successStories .dropdown-content a  {
+    font-size: 16px;
+  }
+}

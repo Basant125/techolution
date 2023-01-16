@@ -1,0 +1,88 @@
+.dropdownContainer{
+    position: relative;
+    margin-bottom: 10px;
+}
+.dropdown {
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+    color: #444;
+    outline: none;
+    background-color: #ffffff;
+    transition: 0.3s all ease-in-out;
+    z-index: 1;
+    position: absolute;
+    border-radius: 1rem;
+    padding-right: 7px;
+}
+.dropdownDiv{
+    overflow-y: auto;
+    height: 0;
+    max-height: 14rem;
+}
+.dropdownInput{
+    padding-left: 2rem;
+    border-bottom: 1px solid;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: relative;
+}
+.dropdownInput::after {
+    content: "";
+    position: absolute;
+    right: 0.9rem;
+    top: 1rem;
+    border: 0.5rem solid #4E4E4E;
+    border-color: #4E4E4E transparent transparent transparent;
+    transition: 0.4s all ease-in-out;
+}
+.dropdownInput.expanded::after {
+    transform: rotate(-180deg);
+    top: 1.25rem;
+    right: 1rem;
+}
+.dropdown input {
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    opacity: 0.01;
+}
+.dropdown label {
+    display: block;
+    padding-left: 1.4rem;
+    padding-right: 3.4rem;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s color ease-in-out;
+    font-size: 1.7rem;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.dropdown.expanded {
+    border: 1px solid #4E4E4E;
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px 0px;
+}
+.dropdown.expanded .dropdownDiv{
+    height: 14rem;
+}
+.error{
+    color: rgb(255, 0, 0);
+    font-size: 1.4rem;
+    min-height: 20px;
+}
+.input__label {
+    color: #4E4E4E; 
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.chip_container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}

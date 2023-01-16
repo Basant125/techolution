@@ -1,0 +1,453 @@
+.dynamicTemplate .bracket-image-our-expertise {
+  opacity: 1;
+  transition: opacity 0.8s ease-out;
+}
+.dynamicTemplate .ourTeam .bracket-image-our-expertise {
+  display: none;
+}
+
+.fp-viewing-0 .dynamicTemplate .ourTeam .bracket-image-our-expertise{
+  transition: none;
+  opacity: 0;
+}
+.fp-viewing-1 .dynamicTemplate .ourTeam .bracket-image-our-expertise,
+.fp-viewing-2 .dynamicTemplate .ourTeam .bracket-image-our-expertise,
+.fp-viewing-2 .dynamicTemplate .realWordAI .bracket-image-our-expertise,
+.fp-viewing-2 .dynamicTemplate .productInnovation .bracket-image-our-expertise
+ {
+  opacity: 1;
+  display: block
+}
+.fp-viewing-1 .dynamicTemplate .bracket-image-our-expertise,
+.fp-viewing-1 .dynamicTemplate .bracket-image-co-create,
+.fp-viewing-1 .dynamicTemplate .bracket-image-index,
+.fp-viewing-2 .dynamicTemplate .bracket-image-our-expertise,
+.dynamicTemplate .bracket-image-co-create {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.section-dynamicTemplate-1,
+.section-dynamicTemplate-3.section-cloudMigration-3,
+.section-dynamicTemplate-3.section-realWordAI-3 {
+  background: linear-gradient(180deg, #8e4feb 0%, #9f4ec4 100%);
+}
+
+.ourTeam .section-dynamicTemplate-1 {
+  background: #fff;
+  /* background: linear-gradient(
+    180deg,
+    rgba(131, 57, 139, 1) 0%,
+    rgba(216, 75, 103, 1) 100%
+  ); */
+}
+/* .ourTeam .bracket-image-our-expertise{
+    opacity: 0;
+}
+.fp-viewing-3 .ourTeam .bracket-image-our-team,.fp-viewing-4 .ourTeam .bracket-image-our-team{
+    opacity: 0;
+} */
+
+.dynamicTemplate
+  .ourTeam
+  .section-dynamicTemplate-0
+  .fp-overflow
+  .main_section_content,
+.dynamicTemplate
+  .ourTeam
+  .section-dynamicTemplate-1
+  .fp-overflow
+  .main_section_content,
+.dynamicTemplate
+  .ourTeam
+  .section-dynamicTemplate-2
+  .fp-overflow
+  .main_section_content {
+  /* margin-top: 16vh; */
+  margin-top: 13vh;
+}
+
+.dynamicTemplate
+  .ourTeam
+  .section-dynamicTemplate-3
+  .fp-overflow
+  .section-content-title,
+.dynamicTemplate
+    .ourTeam
+    .section-dynamicTemplate-0
+    .fp-overflow
+    .section-content-title {
+    margin-top: auto;
+  }
+  .dynamicTemplate
+  .ourTeam
+  .section-dynamicTemplate-1
+  .fp-overflow
+  .section-content-title,
+.dynamicTemplate
+  .ourTeam
+  .section-dynamicTemplate-2
+  .fp-overflow
+  .section-content-title {
+  /* margin-top: -14vh; */
+  margin-top: -18vh;
+}
+
+.fp-viewing-3 .dynamicTemplate .ourTeam .breadcrumb {
+  display: flex;
+}
+
+
+/* .fp-viewing-4 .dynamicTemplate .ourTeam .techo-logo {
+    background:url(/static/TecholutionLogo-BlackandGreenHeader-35bd6c251a220ca42e4d82c86b0300e7.svg);
+    transition: all 1.2s cubic-bezier(0, 0, 1, 0.34);
+} */
+
+/* .fp-viewing-0 .dynamicTemplate .techo-logo-white,
+.fp-viewing-2 .dynamicTemplate .techo-logo-white,
+.fp-viewing-3 .dynamicTemplate .techo-logo-white,
+.fp-viewing-4 .dynamicTemplate .techo-logo-white,
+.fp-viewing-5 .dynamicTemplate .techo-logo-white
+{
+    display: none;
+}
+.fp-viewing-1 .dynamicTemplate .techo-logo-black-green{
+    display: none;
+} */
+
+.fp-viewing-0
+  .dynamicTemplate
+  .ourTeam
+  .header-wrapper
+  .bm-burger-button
+  .bm-burger-bars,
+/* .fp-viewing-1
+  .dynamicTemplate
+  .header-wrapper
+  .bm-burger-button
+  .bm-burger-bars, */
+.fp-viewing-2
+  .dynamicTemplate
+  .header-wrapper
+  .bm-burger-button
+  .bm-burger-bars,
+.fp-viewing-3
+  .dynamicTemplate
+  .header-wrapper
+  .bm-burger-button
+  .bm-burger-bars,
+.fp-viewing-4
+  .dynamicTemplate
+  .header-wrapper
+  .bm-burger-button
+  .bm-burger-bars,
+.fp-viewing-5
+  .dynamicTemplate
+  .header-wrapper
+  .bm-burger-button
+  .bm-burger-bars {
+  background: rgb(148, 78, 220) !important;
+}
+
+.fp-viewing-1
+  .dynamicTemplate
+  .hybridCloud
+  .header-wrapper
+  .bm-burger-button
+  .bm-burger-bars{
+    background: #ffff !important
+  }
+.dynamicTemplate
+  .googleCloud
+  .header-wrapper
+  .bm-burger-button
+  .bm-burger-bars,
+  .privacyPolicyPage .bm-burger-button
+  .bm-burger-bars,
+  .dynamicTemplate
+  .googleCloud
+  .header-wrapper
+  .bm-burger-button
+  .bm-burger-bars,
+  .cookiePolicyPage .bm-burger-button
+  .bm-burger-bars,
+  .dynamicTemplate
+  .googleCloud
+  .header-wrapper
+  .bm-burger-button
+  .bm-burger-bars,
+  .termsOfUsePage .bm-burger-button
+  .bm-burger-bars
+  {
+  background: var(--color-text) !important;
+}
+
+.fp-viewing-0 .dynamicTemplate .play_icon_purple {
+  display: block;
+}
+
+.fp-viewing-0 .dynamicTemplate .chat_icon_purple,
+.fp-viewing-2 .dynamicTemplate .chat_icon_purple,
+.fp-viewing-3 .dynamicTemplate .chat_icon_purple,
+.fp-viewing-4 .dynamicTemplate .chat_icon_purple,
+.fp-viewing-5 .dynamicTemplate .chat_icon_purple {
+  display: block;
+}
+.fp-viewing-2 .dynamicTemplate .cloudSecurity .chat_icon_purple,
+.fp-viewing-2 .dynamicTemplate .applicationModernization .chat_icon_purple,
+.fp-viewing-2 .dynamicTemplate .managedServices .chat_icon_purple,
+.fp-viewing-2 .dynamicTemplate .cloudAutomation .chat_icon_purple,
+.fp-viewing-2 .dynamicTemplate .enterpriseDataManagement .chat_icon_purple,
+.fp-viewing-2 .dynamicTemplate .governance .chat_icon_purple,
+.fp-viewing-3 .dynamicTemplate .enterpriseCloudFoundation .chat_icon_purple,
+.fp-viewing-4 .dynamicTemplate .cloudMigration .chat_icon_purple,
+.fp-viewing-3 .dynamicTemplate .cloudMigration .chat_icon_purple {
+  display: none;
+}
+/* .fp-viewing-2 .dynamicTemplate .cloudSecurity .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-2 .dynamicTemplate .applicationModernization .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-2 .dynamicTemplate .managedServices .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-2 .dynamicTemplate .cloudAutomation .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-4 .dynamicTemplate .cloudMigration .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-2 .dynamicTemplate .enterpriseDataManagement .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-2 .dynamicTemplate .governance .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-3 .dynamicTemplate .enterpriseCloudFoundation .header-wrapper .heart_element:not(.sideBarOpen)
+{
+    display: none;
+} */
+
+.fp-viewing-2 .dynamicTemplate .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-3 .dynamicTemplate .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-4 .dynamicTemplate .header-wrapper .heart_element:not(.sideBarOpen),
+.fp-viewing-5
+  .dynamicTemplate
+  .header-wrapper
+  .heart_element:not(.sideBarOpen) {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NS40MzMiIGhlaWdodD0iMzkuNjkyIiB2aWV3Qm94PSIwIDAgNDUuNDMzIDM5LjY5MiI+DQogIDxnIGlkPSJIZWFyX051bWJlciIgZGF0YS1uYW1lPSJIZWFyL051bWJlciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzOS41IC0xOTYuNDk5KSI+DQogICAgPGcgaWQ9IkhlYXJ0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4NC45NjYgLTE4My41NDcpIj4NCiAgICAgIDxwYXRoIGlkPSJPdXRsaW5lIiBkPSJNNDIuMzg5LDQ5LjUzNywyNC4yMzUsNjcuNjE5LDYuMTIyLDQ5LjUwNkExMC41MTYsMTAuNTE2LDAsMSwxLDIwLjk5NSwzNC42MzRsMi4zLDIuM2ExLjM2NywxLjM2NywwLDAsMCwxLjk0LDBsMi4yNzYtMi4yNzZBMTAuNTIzLDEwLjUyMywwLDAsMSw0Mi4zODksNDkuNTM3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTMgMzUwKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTQ0ZWRjIiBzdHJva2Utd2lkdGg9IjMiLz4NCiAgICAgIDxwYXRoIGlkPSJGaWxsIiBkPSJNMy41LDMxLjc1OGwtLjIxNC4yMTMtLjIxMy0uMjEzYS4xMjQuMTI0LDAsMSwxLC4xNzUtLjE3NWwuMDI3LjAyN2EuMDE2LjAxNiwwLDAsMCwuMDIzLDBsLjAyNy0uMDI3YS4xMjQuMTI0LDAsMCwxLC4xNzUuMTc1WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzMuOTY2IDM2Ny44MjQpIiBmaWxsPSIjOTQ0ZWRjIiBvcGFjaXR5PSIwIi8+DQogICAgPC9nPg0KICA8L2c+DQo8L3N2Zz4NCg==);
+}
+
+.dynamicTemplate .section-dynamicTemplate-0 .fp-overflow .main_section_content,
+.dynamicTemplate .section-dynamicTemplate-1 .fp-overflow .main_section_content,
+.dynamicTemplate
+  .productInnovation
+  .section-dynamicTemplate-2
+  .fp-overflow
+  .main_section_content,
+.dynamicTemplate
+  .realWordAI
+  .section-dynamicTemplate-2
+  .fp-overflow
+  .main_section_content,
+.dynamicTemplate
+  .realWordAI
+  .section-dynamicTemplate-3
+  .fp-overflow
+  .main_section_content,
+.dynamicTemplate
+  .realWordAI
+  .section-dynamicTemplate-4
+  .fp-overflow
+  .main_section_content {
+  margin-top: 12vh;
+}
+
+.dynamicTemplate .section-dynamicTemplate-0 .fp-overflow .section-content-title,
+.dynamicTemplate .section-dynamicTemplate-1 .fp-overflow .section-content-title,
+.dynamicTemplate
+  .productInnovation
+  .section-dynamicTemplate-2
+  .fp-overflow
+  .section-content-title,
+.dynamicTemplate
+  .realWordAI
+  .section-dynamicTemplate-2
+  .fp-overflow
+  .section-content-title,
+.dynamicTemplate
+  .realWordAI
+  .section-dynamicTemplate-3
+  .fp-overflow
+  .section-content-title,
+.dynamicTemplate
+  .realWordAI
+  .section-dynamicTemplate-4
+  .fp-overflow
+  .section-content-title {
+  margin-top: -16vh;
+}
+
+
+.productInnovation .button-cl,
+.realWordAI .button-cl {
+  background: linear-gradient(
+      270deg,
+      rgb(142, 79, 235) 0%,
+      rgb(159, 78, 196) 100%
+    )
+    0% 0% no-repeat padding-box padding-box transparent;
+}
+
+.fp-viewing-4 .ourTeam .breadcrumb {
+  display: none;
+}
+.fp-viewing-3 .ourTeam .bracket-image-index {
+  opacity: 0;
+}
+
+.ourTeam .section-content-title {
+  margin: auto;
+}
+.dynamicTemplate .section-googleCloud-0 .fp-overflow .main_section_content,
+.dynamicTemplate .section-googleCloud-1 .fp-overflow .main_section_content,
+.dynamicTemplate .section-googleCloud-1 .fp-overflow .section-content-title,
+.dynamicTemplate .section-googleCloud-2 .fp-overflow .main_section_content,
+.dynamicTemplate .section-googleCloud-2 .fp-overflow .section-content-title,
+.dynamicTemplate .section-googleCloud-3 .fp-overflow .main_section_content,
+.dynamicTemplate .section-googleCloud-3 .fp-overflow .section-content-title
+{
+  margin-top: 0;
+}
+@media screen and (max-width: 500px) {
+  .fp-viewing-3 .dynamicTemplate .ourTeam .breadcrumb {
+    display: none;
+  }
+  .realWordAI .section-content,
+  .realWordAI .section-content-footer {
+    font-size: 16px;
+  }
+
+  .fp-viewing-0 .dynamicTemplate .hybridCloud .section-content {
+    font-size: 13px;
+  }
+
+  .productInnovation .section-content,
+  .dynamicTemplate .applicationModernization .section-content,
+  .dynamicTemplate .cloudAutomation .section-content,
+  .dynamicTemplate .managedServices .section-content,
+  .dynamicTemplate .hybridCloud .section-content,
+  .dynamicTemplate .edgeComputeIOT .section-content,
+  .dynamicTemplate .realTimeDataStreaming .section-content,
+  .dynamicTemplate .cloudSecurity .section-content,
+  .dynamicTemplate .governance .section-content,
+  .dynamicTemplate .enterpriseCloudFoundation .section-content,
+  .dynamicTemplate .enterpriseDataManagement .section-content,
+  .dynamicTemplate .cloudMigration .section-content {
+    font-size: 15px;
+  }
+
+  .realWordAI .section-content-footer {
+    font-weight: unset;
+  }
+
+  .dynamicTemplate
+    .applicationModernization
+    .section-applicationModernization-0
+    .section-content {
+    width: 28rem;
+  }
+  .dynamicTemplate .cloudAutomation .main_section_content {
+    margin-top: 11vh;
+  }
+  .dynamicTemplate
+    .applicationModernization
+    .fp-overflow
+    .section-content-title {
+    margin-top: -15vh;
+  }
+  .dynamicTemplate .realWordAI .fp-overflow .section-content-title,
+  .dynamicTemplate .productInnovation .fp-overflow .section-content-title {
+    margin-top: -14.2vh !important;
+  }
+
+  /* .dynamicTemplate .main_section_content{
+        margin-top: 13.7vh !important;
+    } */
+  .dynamicTemplate .cloudAutomation .fp-overflow .section-content-title,
+  .dynamicTemplate .hybridCloud .section-hybridCloud-0 .section-content-title,
+  .dynamicTemplate .edgeComputeIOT .fp-overflow .section-content-title,
+  .dynamicTemplate .realTimeDataStreaming .fp-overflow .section-content-title,
+  .dynamicTemplate .cloudSecurity .section-content-title {
+    margin-top: -18vh;
+  }
+  .dynamicTemplate
+    .section-dynamicTemplate-0
+    .fp-overflow
+    .main_section_content,
+  .dynamicTemplate
+    .section-dynamicTemplate-1
+    .fp-overflow
+    .main_section_content,
+  .fp-viewing-2
+    .dynamicTemplate
+    .productInnovation
+    .fp-overflow
+    .main_section_content,
+  .dynamicTemplate
+    .realWordAI
+    .section-dynamicTemplate-2
+    .fp-overflow
+    .main_section_content,
+  .dynamicTemplate
+    .realWordAI
+    .section-dynamicTemplate-3
+    .fp-overflow
+    .main_section_content,
+  .dynamicTemplate
+    .realWordAI
+    .section-dynamicTemplate-4
+    .fp-overflow
+    .main_section_content{
+    margin-top: 11vh;
+  }
+  .dynamicTemplate
+    .googleCloud
+    .section-googleCloud-0
+    .fp-overflow
+    .main_section_content {
+    margin-top: 13vh;
+  }
+
+  .dynamicTemplate
+    .googleCloud
+    .section-googleCloud-0
+    .fp-overflow
+    .main_section_content,
+  .dynamicTemplate
+    .googleCloud
+    .section-googleCloud-1
+    .fp-overflow
+    .main_section_content,
+    .dynamicTemplate
+    .googleCloud
+    .section-googleCloud-2
+    .fp-overflow
+    .main_section_content,
+    .dynamicTemplate
+    .googleCloud
+    .section-googleCloud-3
+    .fp-overflow
+    .main_section_content {
+     margin-top: 0;
+    }
+
+    .dynamicTemplate
+      .ourTeam
+      .section-dynamicTemplate-1
+      .fp-overflow
+      .main_section_content,
+    .dynamicTemplate
+      .ourTeam
+      .section-dynamicTemplate-2
+      .fp-overflow
+      .main_section_content {
+      /* margin-top: 16vh; */
+      margin-top: 15vh;
+    }
+}
+
+.fp-viewing-2 .dynamicTemplate .enterpriseCloudFoundation .arrow-black{
+  display: block;
+}
+.fp-viewing-3 .dynamicTemplate .enterpriseCloudFoundation .arrow-black,.fp-viewing-3 .dynamicTemplate .arrow-black{
+  display: none;
+}
